@@ -1,0 +1,4 @@
+"D:\software_install\clion\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/Hardware_development/Packets/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/Hardware_development/Packets/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug
