@@ -70,7 +70,7 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=D:/Hardware_development/Packets/gcc-arm-none-eabi
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=D:/Hardware_development/Packets/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-gcc-ranlib.exe
 
 //Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=-mcpu=cortex-m7  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0  -std=c++11
+CMAKE_CXX_FLAGS:STRING=-mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0  -std=c++11
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -96,7 +96,7 @@ CMAKE_C_COMPILER_AR:FILEPATH=D:/Hardware_development/Packets/gcc-arm-none-eabi-1
 CMAKE_C_COMPILER_RANLIB:FILEPATH=D:/Hardware_development/Packets/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-gcc-ranlib.exe
 
 //Flags used by the C compiler during all build types.
-CMAKE_C_FLAGS:STRING=-mcpu=cortex-m7  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0  -std=gnu99
+CMAKE_C_FLAGS:STRING=-mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0  -std=gnu99
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g

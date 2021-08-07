@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="STM32H743" targetName="STM32H743.elf" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
@@ -21,7 +39,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1wMpmh9W1WKxhdK9WouHBbiKybC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,10 +53,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.cidr.embedded.config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunManager">
-    <configuration name="STM32H743.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32H743" TARGET_NAME="STM32H743.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="STM32H743" RUN_TARGET_NAME="STM32H743.elf">
+    <configuration name="OCD STM32H743" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32H743" TARGET_NAME="STM32H743.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="STM32H743" RUN_TARGET_NAME="STM32H743.elf">
+      <openocd gdb-port="3333" telnet-port="4444" board-config="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\config\stlink.cfg" reset-type="INIT" download-type="ALWAYS" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <openocd gdb-port="3333" telnet-port="4444" board-config="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\config\stlink.cfg" reset-type="INIT" download-type="ALWAYS" />
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -52,10 +82,67 @@
       <updated>1628278473043</updated>
       <workItem from="1628278476045" duration="13000" />
       <workItem from="1628278539314" duration="494000" />
+      <workItem from="1628319514083" duration="2541000" />
+      <workItem from="1628326811978" duration="1757000" />
+      <workItem from="1628330660242" duration="685000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="111" key="#Inspections" timestamp="1628327716155">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="395" y="111" key="#Inspections/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628327716155" />
+    <state x="651" y="294" width="616" height="275" key="#Notifications" timestamp="1628320432961">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="651" y="294" width="616" height="275" key="#Notifications/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628320432961" />
+    <state x="111" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628322782109">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="111" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322782109" />
+    <state x="673" y="170" key="FileChooserDialogImpl" timestamp="1628322737727">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="673" y="170" key="FileChooserDialogImpl/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322737727" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1628322990070">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322990070" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1628322990070">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322990070" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1628322990070">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322990070" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1628322990070">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322990070" />
+    <state x="368" y="55" width="799" height="561" key="Registry" timestamp="1628327474920">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="368" y="55" width="799" height="561" key="Registry/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628327474920" />
+    <state x="270" y="77" key="SettingsEditor" timestamp="1628327368140">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="270" y="77" key="SettingsEditor/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628327368140" />
   </component>
 </project>

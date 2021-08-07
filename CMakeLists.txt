@@ -16,9 +16,9 @@ set(SIZE arm-none-eabi-size)
 
 SET(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32H743VITX_FLASH.ld)
 
-#Uncomment for hardware floating point
-#SET(FPU_FLAGS "-mfloat-abi=hard -mfpu=fpv4-sp-d16")
-#add_definitions(-DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__FPU_PRESENT=1)
+#Uncomment for hardware floating point Gideon!
+SET(FPU_FLAGS "-mfloat-abi=hard -mfpu=fpv4-sp-d16")
+add_definitions(-DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__FPU_PRESENT=1)
 
 #Uncomment for software floating point
 #SET(FPU_FLAGS "-mfloat-abi=soft")
@@ -37,9 +37,19 @@ set(CMAKE_CXX_STANDARD 11)
 #add_definitions(-DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__FPU_PRESENT=1)
 add_definitions(-DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG)
 
-file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*")
+#文件目录路径
+file(GLOB_RECURSE SOURCES "APP_layer/*.*" "Compute_layer/*.*" "System_layer/*.*" "Hardware_layer/*.*")
 
-include_directories(Core/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include)
+#头文件路径
+include_directories(Hardware_layer/Core/Inc
+                    Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc
+                    Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
+                    Hardware_layer/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+                    Hardware_layer/Drivers/CMSIS/Include
+                    System_layer/FreeRTOS/Source/include
+                    System_layer/FreeRTOS/Source/CMSIS_RTOS
+                    System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F)
+
 
 add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT})
 

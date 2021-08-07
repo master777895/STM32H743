@@ -36,7 +36,7 @@
           </memories>
           <startup>C:\Users\Gideon\STM32Cube\Repository\STM32Cube_FW_H7_V1.8.0\Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\gcc\startup_stm32h743xx.s</startup>
           <LinkSettings>
-            <icfloc>1</icfloc>
+            <icfloc />
             <LinkAdditionalLibs />
           </LinkSettings>
           <heapSize>0x2500</heapSize>
