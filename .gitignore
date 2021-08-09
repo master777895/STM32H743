@@ -56,4 +56,5 @@ dkms.conf
 .mxproject
 .project
 CMakeLists_template.txt
-mx.scratsh
+mx.scratch
+STM32H743.ioc
