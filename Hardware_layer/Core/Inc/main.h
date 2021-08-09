@@ -29,6 +29,27 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32h7xx_hal.h"
+#include "stdio.h"
+#include "string.h"
+
+/** Hardware layer head_file **/
+#include "Hardware_layer_Manager.h"
+#include "PWM.h"
+#include "UART.h"
+#include "I2C.h"
+#include "ADC.h"
+#include "SPI.h"
+#include "RGB.h"
+#include "BUZZER.h"
+#include "PPM.h"
+#include "ULTRA.h"
+#include "USB.h"
+#include "BOTTON.h"
+#include "W25Qxx.h"
+/** System layer head_file **/
+
+
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -51,6 +72,8 @@ extern "C" {
 /* USER CODE END EM */
 
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
+void SystemClock_Config(void);
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);

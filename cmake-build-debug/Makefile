@@ -122,6 +122,357 @@ STM32H743.elf/fast:
 	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/build
 .PHONY : STM32H743.elf/fast
 
+Hardware_layer/Core/Src/ADC.obj: Hardware_layer/Core/Src/ADC.c.obj
+
+.PHONY : Hardware_layer/Core/Src/ADC.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/ADC.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.obj
+.PHONY : Hardware_layer/Core/Src/ADC.c.obj
+
+Hardware_layer/Core/Src/ADC.i: Hardware_layer/Core/Src/ADC.c.i
+
+.PHONY : Hardware_layer/Core/Src/ADC.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/ADC.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.i
+.PHONY : Hardware_layer/Core/Src/ADC.c.i
+
+Hardware_layer/Core/Src/ADC.s: Hardware_layer/Core/Src/ADC.c.s
+
+.PHONY : Hardware_layer/Core/Src/ADC.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/ADC.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.s
+.PHONY : Hardware_layer/Core/Src/ADC.c.s
+
+Hardware_layer/Core/Src/BOTTON.obj: Hardware_layer/Core/Src/BOTTON.c.obj
+
+.PHONY : Hardware_layer/Core/Src/BOTTON.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/BOTTON.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.obj
+.PHONY : Hardware_layer/Core/Src/BOTTON.c.obj
+
+Hardware_layer/Core/Src/BOTTON.i: Hardware_layer/Core/Src/BOTTON.c.i
+
+.PHONY : Hardware_layer/Core/Src/BOTTON.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/BOTTON.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.i
+.PHONY : Hardware_layer/Core/Src/BOTTON.c.i
+
+Hardware_layer/Core/Src/BOTTON.s: Hardware_layer/Core/Src/BOTTON.c.s
+
+.PHONY : Hardware_layer/Core/Src/BOTTON.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/BOTTON.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.s
+.PHONY : Hardware_layer/Core/Src/BOTTON.c.s
+
+Hardware_layer/Core/Src/BUZZER.obj: Hardware_layer/Core/Src/BUZZER.c.obj
+
+.PHONY : Hardware_layer/Core/Src/BUZZER.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/BUZZER.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.obj
+.PHONY : Hardware_layer/Core/Src/BUZZER.c.obj
+
+Hardware_layer/Core/Src/BUZZER.i: Hardware_layer/Core/Src/BUZZER.c.i
+
+.PHONY : Hardware_layer/Core/Src/BUZZER.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/BUZZER.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.i
+.PHONY : Hardware_layer/Core/Src/BUZZER.c.i
+
+Hardware_layer/Core/Src/BUZZER.s: Hardware_layer/Core/Src/BUZZER.c.s
+
+.PHONY : Hardware_layer/Core/Src/BUZZER.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/BUZZER.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.s
+.PHONY : Hardware_layer/Core/Src/BUZZER.c.s
+
+Hardware_layer/Core/Src/I2C.obj: Hardware_layer/Core/Src/I2C.c.obj
+
+.PHONY : Hardware_layer/Core/Src/I2C.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/I2C.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.obj
+.PHONY : Hardware_layer/Core/Src/I2C.c.obj
+
+Hardware_layer/Core/Src/I2C.i: Hardware_layer/Core/Src/I2C.c.i
+
+.PHONY : Hardware_layer/Core/Src/I2C.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/I2C.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.i
+.PHONY : Hardware_layer/Core/Src/I2C.c.i
+
+Hardware_layer/Core/Src/I2C.s: Hardware_layer/Core/Src/I2C.c.s
+
+.PHONY : Hardware_layer/Core/Src/I2C.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/I2C.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.s
+.PHONY : Hardware_layer/Core/Src/I2C.c.s
+
+Hardware_layer/Core/Src/PPM.obj: Hardware_layer/Core/Src/PPM.c.obj
+
+.PHONY : Hardware_layer/Core/Src/PPM.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/PPM.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.obj
+.PHONY : Hardware_layer/Core/Src/PPM.c.obj
+
+Hardware_layer/Core/Src/PPM.i: Hardware_layer/Core/Src/PPM.c.i
+
+.PHONY : Hardware_layer/Core/Src/PPM.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/PPM.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.i
+.PHONY : Hardware_layer/Core/Src/PPM.c.i
+
+Hardware_layer/Core/Src/PPM.s: Hardware_layer/Core/Src/PPM.c.s
+
+.PHONY : Hardware_layer/Core/Src/PPM.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/PPM.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.s
+.PHONY : Hardware_layer/Core/Src/PPM.c.s
+
+Hardware_layer/Core/Src/PWM.obj: Hardware_layer/Core/Src/PWM.c.obj
+
+.PHONY : Hardware_layer/Core/Src/PWM.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/PWM.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.obj
+.PHONY : Hardware_layer/Core/Src/PWM.c.obj
+
+Hardware_layer/Core/Src/PWM.i: Hardware_layer/Core/Src/PWM.c.i
+
+.PHONY : Hardware_layer/Core/Src/PWM.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/PWM.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.i
+.PHONY : Hardware_layer/Core/Src/PWM.c.i
+
+Hardware_layer/Core/Src/PWM.s: Hardware_layer/Core/Src/PWM.c.s
+
+.PHONY : Hardware_layer/Core/Src/PWM.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/PWM.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.s
+.PHONY : Hardware_layer/Core/Src/PWM.c.s
+
+Hardware_layer/Core/Src/RGB.obj: Hardware_layer/Core/Src/RGB.c.obj
+
+.PHONY : Hardware_layer/Core/Src/RGB.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/RGB.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.obj
+.PHONY : Hardware_layer/Core/Src/RGB.c.obj
+
+Hardware_layer/Core/Src/RGB.i: Hardware_layer/Core/Src/RGB.c.i
+
+.PHONY : Hardware_layer/Core/Src/RGB.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/RGB.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.i
+.PHONY : Hardware_layer/Core/Src/RGB.c.i
+
+Hardware_layer/Core/Src/RGB.s: Hardware_layer/Core/Src/RGB.c.s
+
+.PHONY : Hardware_layer/Core/Src/RGB.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/RGB.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.s
+.PHONY : Hardware_layer/Core/Src/RGB.c.s
+
+Hardware_layer/Core/Src/SPI.obj: Hardware_layer/Core/Src/SPI.c.obj
+
+.PHONY : Hardware_layer/Core/Src/SPI.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/SPI.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.obj
+.PHONY : Hardware_layer/Core/Src/SPI.c.obj
+
+Hardware_layer/Core/Src/SPI.i: Hardware_layer/Core/Src/SPI.c.i
+
+.PHONY : Hardware_layer/Core/Src/SPI.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/SPI.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.i
+.PHONY : Hardware_layer/Core/Src/SPI.c.i
+
+Hardware_layer/Core/Src/SPI.s: Hardware_layer/Core/Src/SPI.c.s
+
+.PHONY : Hardware_layer/Core/Src/SPI.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/SPI.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.s
+.PHONY : Hardware_layer/Core/Src/SPI.c.s
+
+Hardware_layer/Core/Src/SYSTEM_Config.obj: Hardware_layer/Core/Src/SYSTEM_Config.c.obj
+
+.PHONY : Hardware_layer/Core/Src/SYSTEM_Config.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/SYSTEM_Config.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.obj
+.PHONY : Hardware_layer/Core/Src/SYSTEM_Config.c.obj
+
+Hardware_layer/Core/Src/SYSTEM_Config.i: Hardware_layer/Core/Src/SYSTEM_Config.c.i
+
+.PHONY : Hardware_layer/Core/Src/SYSTEM_Config.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/SYSTEM_Config.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.i
+.PHONY : Hardware_layer/Core/Src/SYSTEM_Config.c.i
+
+Hardware_layer/Core/Src/SYSTEM_Config.s: Hardware_layer/Core/Src/SYSTEM_Config.c.s
+
+.PHONY : Hardware_layer/Core/Src/SYSTEM_Config.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/SYSTEM_Config.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.s
+.PHONY : Hardware_layer/Core/Src/SYSTEM_Config.c.s
+
+Hardware_layer/Core/Src/UART.obj: Hardware_layer/Core/Src/UART.c.obj
+
+.PHONY : Hardware_layer/Core/Src/UART.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/UART.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.obj
+.PHONY : Hardware_layer/Core/Src/UART.c.obj
+
+Hardware_layer/Core/Src/UART.i: Hardware_layer/Core/Src/UART.c.i
+
+.PHONY : Hardware_layer/Core/Src/UART.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/UART.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.i
+.PHONY : Hardware_layer/Core/Src/UART.c.i
+
+Hardware_layer/Core/Src/UART.s: Hardware_layer/Core/Src/UART.c.s
+
+.PHONY : Hardware_layer/Core/Src/UART.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/UART.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.s
+.PHONY : Hardware_layer/Core/Src/UART.c.s
+
+Hardware_layer/Core/Src/ULTRA.obj: Hardware_layer/Core/Src/ULTRA.c.obj
+
+.PHONY : Hardware_layer/Core/Src/ULTRA.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/ULTRA.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.obj
+.PHONY : Hardware_layer/Core/Src/ULTRA.c.obj
+
+Hardware_layer/Core/Src/ULTRA.i: Hardware_layer/Core/Src/ULTRA.c.i
+
+.PHONY : Hardware_layer/Core/Src/ULTRA.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/ULTRA.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.i
+.PHONY : Hardware_layer/Core/Src/ULTRA.c.i
+
+Hardware_layer/Core/Src/ULTRA.s: Hardware_layer/Core/Src/ULTRA.c.s
+
+.PHONY : Hardware_layer/Core/Src/ULTRA.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/ULTRA.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.s
+.PHONY : Hardware_layer/Core/Src/ULTRA.c.s
+
+Hardware_layer/Core/Src/USB.obj: Hardware_layer/Core/Src/USB.c.obj
+
+.PHONY : Hardware_layer/Core/Src/USB.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/USB.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.obj
+.PHONY : Hardware_layer/Core/Src/USB.c.obj
+
+Hardware_layer/Core/Src/USB.i: Hardware_layer/Core/Src/USB.c.i
+
+.PHONY : Hardware_layer/Core/Src/USB.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/USB.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.i
+.PHONY : Hardware_layer/Core/Src/USB.c.i
+
+Hardware_layer/Core/Src/USB.s: Hardware_layer/Core/Src/USB.c.s
+
+.PHONY : Hardware_layer/Core/Src/USB.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/USB.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.s
+.PHONY : Hardware_layer/Core/Src/USB.c.s
+
+Hardware_layer/Core/Src/W25Qxx.obj: Hardware_layer/Core/Src/W25Qxx.c.obj
+
+.PHONY : Hardware_layer/Core/Src/W25Qxx.obj
+
+# target to build an object file
+Hardware_layer/Core/Src/W25Qxx.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.obj
+.PHONY : Hardware_layer/Core/Src/W25Qxx.c.obj
+
+Hardware_layer/Core/Src/W25Qxx.i: Hardware_layer/Core/Src/W25Qxx.c.i
+
+.PHONY : Hardware_layer/Core/Src/W25Qxx.i
+
+# target to preprocess a source file
+Hardware_layer/Core/Src/W25Qxx.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.i
+.PHONY : Hardware_layer/Core/Src/W25Qxx.c.i
+
+Hardware_layer/Core/Src/W25Qxx.s: Hardware_layer/Core/Src/W25Qxx.c.s
+
+.PHONY : Hardware_layer/Core/Src/W25Qxx.s
+
+# target to generate assembly for a file
+Hardware_layer/Core/Src/W25Qxx.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.s
+.PHONY : Hardware_layer/Core/Src/W25Qxx.c.s
+
 Hardware_layer/Core/Src/freertos.obj: Hardware_layer/Core/Src/freertos.c.obj
 
 .PHONY : Hardware_layer/Core/Src/freertos.obj
@@ -175,60 +526,6 @@ Hardware_layer/Core/Src/main.s: Hardware_layer/Core/Src/main.c.s
 Hardware_layer/Core/Src/main.c.s:
 	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.s
 .PHONY : Hardware_layer/Core/Src/main.c.s
-
-Hardware_layer/Core/Src/stm32h7xx_hal_msp.obj: Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.obj
-
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_msp.obj
-
-# target to build an object file
-Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.obj:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.obj
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.obj
-
-Hardware_layer/Core/Src/stm32h7xx_hal_msp.i: Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.i
-
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_msp.i
-
-# target to preprocess a source file
-Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.i:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.i
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.i
-
-Hardware_layer/Core/Src/stm32h7xx_hal_msp.s: Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.s
-
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_msp.s
-
-# target to generate assembly for a file
-Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.s:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.s
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.s
-
-Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.obj: Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.obj
-
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.obj
-
-# target to build an object file
-Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.obj:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.obj
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.obj
-
-Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.i: Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.i
-
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.i
-
-# target to preprocess a source file
-Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.i:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.i
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.i
-
-Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.s: Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.s
-
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.s
-
-# target to generate assembly for a file
-Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.s:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.s
-.PHONY : Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.s
 
 Hardware_layer/Core/Src/stm32h7xx_it.obj: Hardware_layer/Core/Src/stm32h7xx_it.c.obj
 
@@ -1076,6 +1373,33 @@ Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s:
 	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s
 .PHONY : Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s
 
+Hardware_layer/Hardware_layer_Manager.obj: Hardware_layer/Hardware_layer_Manager.c.obj
+
+.PHONY : Hardware_layer/Hardware_layer_Manager.obj
+
+# target to build an object file
+Hardware_layer/Hardware_layer_Manager.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.obj
+.PHONY : Hardware_layer/Hardware_layer_Manager.c.obj
+
+Hardware_layer/Hardware_layer_Manager.i: Hardware_layer/Hardware_layer_Manager.c.i
+
+.PHONY : Hardware_layer/Hardware_layer_Manager.i
+
+# target to preprocess a source file
+Hardware_layer/Hardware_layer_Manager.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.i
+.PHONY : Hardware_layer/Hardware_layer_Manager.c.i
+
+Hardware_layer/Hardware_layer_Manager.s: Hardware_layer/Hardware_layer_Manager.c.s
+
+.PHONY : Hardware_layer/Hardware_layer_Manager.s
+
+# target to generate assembly for a file
+Hardware_layer/Hardware_layer_Manager.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.s
+.PHONY : Hardware_layer/Hardware_layer_Manager.c.s
+
 System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj: System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
 
 .PHONY : System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj
@@ -1346,6 +1670,33 @@ System_layer/FreeRTOS/Source/timers.c.s:
 	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.s
 .PHONY : System_layer/FreeRTOS/Source/timers.c.s
 
+System_layer/System_layer_Manager.obj: System_layer/System_layer_Manager.c.obj
+
+.PHONY : System_layer/System_layer_Manager.obj
+
+# target to build an object file
+System_layer/System_layer_Manager.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.obj
+.PHONY : System_layer/System_layer_Manager.c.obj
+
+System_layer/System_layer_Manager.i: System_layer/System_layer_Manager.c.i
+
+.PHONY : System_layer/System_layer_Manager.i
+
+# target to preprocess a source file
+System_layer/System_layer_Manager.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.i
+.PHONY : System_layer/System_layer_Manager.c.i
+
+System_layer/System_layer_Manager.s: System_layer/System_layer_Manager.c.s
+
+.PHONY : System_layer/System_layer_Manager.s
+
+# target to generate assembly for a file
+System_layer/System_layer_Manager.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.s
+.PHONY : System_layer/System_layer_Manager.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1355,18 +1706,51 @@ help:
 	@echo ... STM32H743.elf
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Hardware_layer/Core/Src/ADC.obj
+	@echo ... Hardware_layer/Core/Src/ADC.i
+	@echo ... Hardware_layer/Core/Src/ADC.s
+	@echo ... Hardware_layer/Core/Src/BOTTON.obj
+	@echo ... Hardware_layer/Core/Src/BOTTON.i
+	@echo ... Hardware_layer/Core/Src/BOTTON.s
+	@echo ... Hardware_layer/Core/Src/BUZZER.obj
+	@echo ... Hardware_layer/Core/Src/BUZZER.i
+	@echo ... Hardware_layer/Core/Src/BUZZER.s
+	@echo ... Hardware_layer/Core/Src/I2C.obj
+	@echo ... Hardware_layer/Core/Src/I2C.i
+	@echo ... Hardware_layer/Core/Src/I2C.s
+	@echo ... Hardware_layer/Core/Src/PPM.obj
+	@echo ... Hardware_layer/Core/Src/PPM.i
+	@echo ... Hardware_layer/Core/Src/PPM.s
+	@echo ... Hardware_layer/Core/Src/PWM.obj
+	@echo ... Hardware_layer/Core/Src/PWM.i
+	@echo ... Hardware_layer/Core/Src/PWM.s
+	@echo ... Hardware_layer/Core/Src/RGB.obj
+	@echo ... Hardware_layer/Core/Src/RGB.i
+	@echo ... Hardware_layer/Core/Src/RGB.s
+	@echo ... Hardware_layer/Core/Src/SPI.obj
+	@echo ... Hardware_layer/Core/Src/SPI.i
+	@echo ... Hardware_layer/Core/Src/SPI.s
+	@echo ... Hardware_layer/Core/Src/SYSTEM_Config.obj
+	@echo ... Hardware_layer/Core/Src/SYSTEM_Config.i
+	@echo ... Hardware_layer/Core/Src/SYSTEM_Config.s
+	@echo ... Hardware_layer/Core/Src/UART.obj
+	@echo ... Hardware_layer/Core/Src/UART.i
+	@echo ... Hardware_layer/Core/Src/UART.s
+	@echo ... Hardware_layer/Core/Src/ULTRA.obj
+	@echo ... Hardware_layer/Core/Src/ULTRA.i
+	@echo ... Hardware_layer/Core/Src/ULTRA.s
+	@echo ... Hardware_layer/Core/Src/USB.obj
+	@echo ... Hardware_layer/Core/Src/USB.i
+	@echo ... Hardware_layer/Core/Src/USB.s
+	@echo ... Hardware_layer/Core/Src/W25Qxx.obj
+	@echo ... Hardware_layer/Core/Src/W25Qxx.i
+	@echo ... Hardware_layer/Core/Src/W25Qxx.s
 	@echo ... Hardware_layer/Core/Src/freertos.obj
 	@echo ... Hardware_layer/Core/Src/freertos.i
 	@echo ... Hardware_layer/Core/Src/freertos.s
 	@echo ... Hardware_layer/Core/Src/main.obj
 	@echo ... Hardware_layer/Core/Src/main.i
 	@echo ... Hardware_layer/Core/Src/main.s
-	@echo ... Hardware_layer/Core/Src/stm32h7xx_hal_msp.obj
-	@echo ... Hardware_layer/Core/Src/stm32h7xx_hal_msp.i
-	@echo ... Hardware_layer/Core/Src/stm32h7xx_hal_msp.s
-	@echo ... Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.obj
-	@echo ... Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.i
-	@echo ... Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.s
 	@echo ... Hardware_layer/Core/Src/stm32h7xx_it.obj
 	@echo ... Hardware_layer/Core/Src/stm32h7xx_it.i
 	@echo ... Hardware_layer/Core/Src/stm32h7xx_it.s
@@ -1461,6 +1845,9 @@ help:
 	@echo ... Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.obj
 	@echo ... Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.i
 	@echo ... Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.s
+	@echo ... Hardware_layer/Hardware_layer_Manager.obj
+	@echo ... Hardware_layer/Hardware_layer_Manager.i
+	@echo ... Hardware_layer/Hardware_layer_Manager.s
 	@echo ... System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj
 	@echo ... System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i
 	@echo ... System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s
@@ -1491,6 +1878,9 @@ help:
 	@echo ... System_layer/FreeRTOS/Source/timers.obj
 	@echo ... System_layer/FreeRTOS/Source/timers.i
 	@echo ... System_layer/FreeRTOS/Source/timers.s
+	@echo ... System_layer/System_layer_Manager.obj
+	@echo ... System_layer/System_layer_Manager.i
+	@echo ... System_layer/System_layer_Manager.s
 .PHONY : help
 
 

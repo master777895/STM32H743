@@ -53,12 +53,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stm32h743_generate" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Inc" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="OCD STM32H743" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32H743" TARGET_NAME="STM32H743.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="STM32H743" RUN_TARGET_NAME="STM32H743.elf">
-      <openocd gdb-port="3333" telnet-port="4444" board-config="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\config\stlink.cfg" reset-type="INIT" download-type="ALWAYS" />
+      <openocd gdb-port="3333" telnet-port="4444" board-config="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\debug_OCD_config\stlink.cfg" reset-type="INIT" download-type="ALWAYS" />
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -85,6 +90,12 @@
       <workItem from="1628319514083" duration="2541000" />
       <workItem from="1628326811978" duration="1757000" />
       <workItem from="1628330660242" duration="685000" />
+      <workItem from="1628331814534" duration="986000" />
+      <workItem from="1628341849720" duration="5181000" />
+      <workItem from="1628399945704" duration="24608000" />
+      <workItem from="1628494697303" duration="738000" />
+      <workItem from="1628495457160" duration="22747000" />
+      <workItem from="1628534385279" duration="2659000" />
     </task>
     <servers />
   </component>
@@ -112,14 +123,20 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="651" y="294" width="616" height="275" key="#Notifications/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628320432961" />
-    <state x="111" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628322782109">
+    <state x="111" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628331846627">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="111" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322782109" />
-    <state x="673" y="170" key="FileChooserDialogImpl" timestamp="1628322737727">
+    <state x="111" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628331846627" />
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1628332350814">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="673" y="170" key="FileChooserDialogImpl/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322737727" />
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628332350814" />
+    <state x="2393" y="-1085" key="FileChooserDialogImpl" timestamp="1628505797439">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state x="673" y="170" key="FileChooserDialogImpl/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628331841998" />
+    <state x="2393" y="-1085" key="FileChooserDialogImpl/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628505797439" />
+    <state x="1309" y="-1542" key="FileChooserDialogImpl/0.0.1536.864/836.-1920.1080.1920@836.-1920.1080.1920" timestamp="1628345635630" />
     <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1628322990070">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -140,9 +157,24 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="368" y="55" width="799" height="561" key="Registry/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628327474920" />
-    <state x="270" y="77" key="SettingsEditor" timestamp="1628327368140">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="1968" y="-805" key="SettingsEditor" timestamp="1628506527155">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
     <state x="270" y="77" key="SettingsEditor/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628327368140" />
+    <state x="1968" y="-805" key="SettingsEditor/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628506527155" />
+    <state x="882" y="-1095" key="SettingsEditor/0.0.1536.864/836.-1920.1080.1920@836.-1920.1080.1920" timestamp="1628347584621" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1628494741506">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628494741506" />
+    <state x="2162" y="-902" width="776" height="798" key="find.popup" timestamp="1628525818478">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state x="2162" y="-902" width="776" height="798" key="find.popup/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628525818478" />
+    <state x="2123" y="-1018" width="672" height="678" key="search.everywhere.popup" timestamp="1628529922323">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state x="2123" y="-1018" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628529922323" />
+    <state x="1039" y="-1475" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/836.-1920.1080.1920@836.-1920.1080.1920" timestamp="1628400355680" />
   </component>
 </project>

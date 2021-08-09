@@ -1344,15 +1344,15 @@ HAL_StatusTypeDef HAL_TIM_PWM_DeInit(TIM_HandleTypeDef *htim)
   * @param  htim TIM PWM handle
   * @retval None
   */
-__weak void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *htim)
-{
-  /* Prevent unused argument(s) compilation warning */
-  UNUSED(htim);
-
-  /* NOTE : This function should not be modified, when the callback is needed,
-            the HAL_TIM_PWM_MspInit could be implemented in the user file
-   */
-}
+//__weak void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *htim)
+//{
+//  /* Prevent unused argument(s) compilation warning */
+//  UNUSED(htim);
+//
+//  /* NOTE : This function should not be modified, when the callback is needed,
+//            the HAL_TIM_PWM_MspInit could be implemented in the user file
+//   */
+//}
 
 /**
   * @brief  DeInitializes TIM PWM MSP.

@@ -41,11 +41,13 @@ add_definitions(-DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG)
 file(GLOB_RECURSE SOURCES "APP_layer/*.*" "Compute_layer/*.*" "System_layer/*.*" "Hardware_layer/*.*")
 
 #头文件路径
-include_directories(Hardware_layer/Core/Inc
+include_directories(Hardware_layer
+                    Hardware_layer/Core/Inc
                     Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc
                     Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
                     Hardware_layer/Drivers/CMSIS/Device/ST/STM32H7xx/Include
                     Hardware_layer/Drivers/CMSIS/Include
+                    System_layer
                     System_layer/FreeRTOS/Source/include
                     System_layer/FreeRTOS/Source/CMSIS_RTOS
                     System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F)

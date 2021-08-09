@@ -56,9 +56,178 @@ include CMakeFiles/STM32H743.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/STM32H743.elf.dir/flags.make
 
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.obj: ../Hardware_layer/Core/Src/ADC.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\ADC.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\ADC.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\ADC.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\ADC.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\ADC.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\ADC.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.obj: ../Hardware_layer/Core/Src/BOTTON.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\BOTTON.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\BOTTON.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\BOTTON.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\BOTTON.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\BOTTON.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\BOTTON.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.obj: ../Hardware_layer/Core/Src/BUZZER.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\BUZZER.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\BUZZER.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\BUZZER.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\BUZZER.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\BUZZER.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\BUZZER.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.obj: ../Hardware_layer/Core/Src/I2C.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\I2C.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\I2C.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\I2C.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\I2C.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\I2C.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\I2C.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.obj: ../Hardware_layer/Core/Src/PPM.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\PPM.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\PPM.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\PPM.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\PPM.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\PPM.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\PPM.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.obj: ../Hardware_layer/Core/Src/PWM.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\PWM.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\PWM.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\PWM.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\PWM.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\PWM.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\PWM.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.obj: ../Hardware_layer/Core/Src/RGB.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\RGB.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\RGB.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\RGB.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\RGB.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\RGB.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\RGB.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.obj: ../Hardware_layer/Core/Src/SPI.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\SPI.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\SPI.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\SPI.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\SPI.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\SPI.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\SPI.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.obj: ../Hardware_layer/Core/Src/SYSTEM_Config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\SYSTEM_Config.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\SYSTEM_Config.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\SYSTEM_Config.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\SYSTEM_Config.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\SYSTEM_Config.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\SYSTEM_Config.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.obj: ../Hardware_layer/Core/Src/UART.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\UART.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\UART.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\UART.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\UART.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\UART.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\UART.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.obj: ../Hardware_layer/Core/Src/ULTRA.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\ULTRA.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\ULTRA.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\ULTRA.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\ULTRA.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\ULTRA.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\ULTRA.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.obj: ../Hardware_layer/Core/Src/USB.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\USB.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\USB.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\USB.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\USB.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\USB.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\USB.c.s
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.obj: ../Hardware_layer/Core/Src/W25Qxx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\W25Qxx.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\W25Qxx.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\W25Qxx.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\W25Qxx.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\W25Qxx.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\W25Qxx.c.s
+
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.obj: ../Hardware_layer/Core/Src/freertos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\freertos.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\freertos.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.i: cmake_force
@@ -71,7 +240,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.s: cmake_force
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.obj: ../Hardware_layer/Core/Src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\main.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\main.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.i: cmake_force
@@ -82,35 +251,9 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.s"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\main.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\main.c.s
 
-CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
-CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.obj: ../Hardware_layer/Core/Src/stm32h7xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.obj"
-	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\stm32h7xx_hal_msp.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\stm32h7xx_hal_msp.c
-
-CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.i"
-	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\stm32h7xx_hal_msp.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\stm32h7xx_hal_msp.c.i
-
-CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.s"
-	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\stm32h7xx_hal_msp.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\stm32h7xx_hal_msp.c.s
-
-CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
-CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.obj: ../Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.obj"
-	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\stm32h7xx_hal_timebase_tim.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\stm32h7xx_hal_timebase_tim.c
-
-CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.i"
-	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\stm32h7xx_hal_timebase_tim.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\stm32h7xx_hal_timebase_tim.c.i
-
-CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.s"
-	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\stm32h7xx_hal_timebase_tim.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\stm32h7xx_hal_timebase_tim.c.s
-
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_it.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_it.c.obj: ../Hardware_layer/Core/Src/stm32h7xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_it.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\stm32h7xx_it.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\stm32h7xx_it.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_it.c.i: cmake_force
@@ -123,7 +266,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_it.c.s: cmake_for
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/syscalls.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/syscalls.c.obj: ../Hardware_layer/Core/Src/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/syscalls.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\syscalls.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\syscalls.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/syscalls.c.i: cmake_force
@@ -136,7 +279,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/sysmem.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/sysmem.c.obj: ../Hardware_layer/Core/Src/sysmem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/sysmem.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\sysmem.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\sysmem.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/sysmem.c.i: cmake_force
@@ -149,7 +292,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/sysmem.c.s: cmake_force
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/system_stm32h7xx.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/system_stm32h7xx.c.obj: ../Hardware_layer/Core/Src/system_stm32h7xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/system_stm32h7xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/system_stm32h7xx.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Src\system_stm32h7xx.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Src\system_stm32h7xx.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/system_stm32h7xx.c.i: cmake_force
@@ -162,12 +305,12 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/system_stm32h7xx.c.s: cmake
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Startup/startup_stm32h743vitx.s.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Startup/startup_stm32h743vitx.s.obj: ../Hardware_layer/Core/Startup/startup_stm32h743vitx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Startup/startup_stm32h743vitx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building ASM object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Startup/startup_stm32h743vitx.s.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Core\Startup\startup_stm32h743vitx.s.obj -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Startup\startup_stm32h743vitx.s
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.i: cmake_force
@@ -180,7 +323,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.c.i: cmake_force
@@ -193,7 +336,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_adc_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.c.i: cmake_force
@@ -206,7 +349,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.i: cmake_force
@@ -219,7 +362,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.i: cmake_force
@@ -232,7 +375,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c.i: cmake_force
@@ -245,7 +388,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_exti.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.i: cmake_force
@@ -258,7 +401,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.i: cmake_force
@@ -271,7 +414,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.i: cmake_force
@@ -284,7 +427,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.i: cmake_force
@@ -297,7 +440,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_hsem.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.i: cmake_force
@@ -310,7 +453,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.i: cmake_force
@@ -323,7 +466,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c.i: cmake_force
@@ -336,7 +479,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c.i: cmake_force
@@ -349,7 +492,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd.c.i: cmake_force
@@ -362,7 +505,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pcd_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pcd_ex.c.i: cmake_force
@@ -375,7 +518,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c.i: cmake_force
@@ -388,7 +531,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.i: cmake_force
@@ -401,7 +544,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.i: cmake_force
@@ -414,7 +557,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.i: cmake_force
@@ -427,7 +570,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.i: cmake_force
@@ -440,7 +583,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_spi_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.i: cmake_force
@@ -453,7 +596,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c.i: cmake_force
@@ -466,7 +609,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.i: cmake_force
@@ -479,7 +622,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.i: cmake_force
@@ -492,7 +635,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.i: cmake_force
@@ -505,7 +648,7 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj: ../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usb.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usb.c
 
 CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.i: cmake_force
@@ -516,9 +659,22 @@ CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.s"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usb.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_usb.c.s
 
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.obj: ../Hardware_layer/Hardware_layer_Manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Hardware_layer_Manager.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Hardware_layer_Manager.c
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Hardware_layer_Manager.c > CMakeFiles\STM32H743.elf.dir\Hardware_layer\Hardware_layer_Manager.c.i
+
+CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Hardware_layer_Manager.c -o CMakeFiles\STM32H743.elf.dir\Hardware_layer\Hardware_layer_Manager.c.s
+
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: ../System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i: cmake_force
@@ -531,7 +687,7 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/croutine.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/croutine.c.obj: ../System_layer/FreeRTOS/Source/croutine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/croutine.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/croutine.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\croutine.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\croutine.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/croutine.c.i: cmake_force
@@ -544,7 +700,7 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/croutine.c.s: cmake_fo
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/event_groups.c.obj: ../System_layer/FreeRTOS/Source/event_groups.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/event_groups.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/event_groups.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\event_groups.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\event_groups.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/event_groups.c.i: cmake_force
@@ -557,7 +713,7 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/event_groups.c.s: cmak
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/list.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/list.c.obj: ../System_layer/FreeRTOS/Source/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/list.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\list.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\list.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/list.c.i: cmake_force
@@ -570,7 +726,7 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/list.c.s: cmake_force
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: ../System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i: cmake_force
@@ -583,7 +739,7 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F/
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: ../System_layer/FreeRTOS/Source/portable/MemMang/heap_4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\portable\MemMang\heap_4.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\portable\MemMang\heap_4.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
@@ -596,7 +752,7 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/portable/MemMang/heap_
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/queue.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/queue.c.obj: ../System_layer/FreeRTOS/Source/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/queue.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\queue.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\queue.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/queue.c.i: cmake_force
@@ -609,7 +765,7 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/queue.c.s: cmake_force
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/stream_buffer.c.obj: ../System_layer/FreeRTOS/Source/stream_buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/stream_buffer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/stream_buffer.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\stream_buffer.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\stream_buffer.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/stream_buffer.c.i: cmake_force
@@ -622,7 +778,7 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/stream_buffer.c.s: cma
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/tasks.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/tasks.c.obj: ../System_layer/FreeRTOS/Source/tasks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/tasks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/tasks.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\tasks.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\tasks.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/tasks.c.i: cmake_force
@@ -635,7 +791,7 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/tasks.c.s: cmake_force
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.obj: ../System_layer/FreeRTOS/Source/timers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.obj"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\timers.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\timers.c
 
 CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.i: cmake_force
@@ -646,12 +802,36 @@ CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.s"
 	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\FreeRTOS\Source\timers.c -o CMakeFiles\STM32H743.elf.dir\System_layer\FreeRTOS\Source\timers.c.s
 
+CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.obj: CMakeFiles/STM32H743.elf.dir/flags.make
+CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.obj: ../System_layer/System_layer_Manager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.obj"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\STM32H743.elf.dir\System_layer\System_layer_Manager.c.obj   -c D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\System_layer_Manager.c
+
+CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.i"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\System_layer_Manager.c > CMakeFiles\STM32H743.elf.dir\System_layer\System_layer_Manager.c.i
+
+CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.s"
+	D:\Hardware_development\Packets\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\System_layer_Manager.c -o CMakeFiles\STM32H743.elf.dir\System_layer\System_layer_Manager.c.s
+
 # Object files for target STM32H743.elf
 STM32H743_elf_OBJECTS = \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.obj" \
-"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.obj" \
-"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_it.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/syscalls.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/sysmem.c.obj" \
@@ -684,6 +864,7 @@ STM32H743_elf_OBJECTS = \
 "CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/croutine.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/event_groups.c.obj" \
@@ -693,15 +874,27 @@ STM32H743_elf_OBJECTS = \
 "CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/queue.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/stream_buffer.c.obj" \
 "CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/tasks.c.obj" \
-"CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.obj"
+"CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.obj" \
+"CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.obj"
 
 # External object files for target STM32H743.elf
 STM32H743_elf_EXTERNAL_OBJECTS =
 
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/I2C.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PPM.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/PWM.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/RGB.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SPI.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/SYSTEM_Config.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/UART.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.obj
-STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_msp.c.obj
-STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_hal_timebase_tim.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_it.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/syscalls.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/sysmem.c.obj
@@ -734,6 +927,7 @@ STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/croutine.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/event_groups.c.obj
@@ -744,10 +938,11 @@ STM32H743.elf: CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/queue.c
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/stream_buffer.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/tasks.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.obj
+STM32H743.elf: CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.obj
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/build.make
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/objects1.rsp
 STM32H743.elf: CMakeFiles/STM32H743.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking C executable STM32H743.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Linking C executable STM32H743.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\STM32H743.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/STM32H743.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/STM32H743.bin"
