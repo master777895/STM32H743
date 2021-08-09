@@ -3,7 +3,7 @@
 
 
 
-基于STM32H7芯片，CUBEMX平台，CLION编译环境，内嵌FreROTS系统的飞控项目。
+基于STM32H7芯片，CUBEMX平台，CLION编译环境，内嵌FreeRTOS系统的飞控项目。
 
 
 
