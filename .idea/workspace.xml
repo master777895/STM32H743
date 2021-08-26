@@ -49,21 +49,28 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="OCFindUsagesOptions.isSearchForTextOccurrences" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../stm32h743_generate" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.splitter.proportion" value="0.25484198" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Hardware_layer\Core\Inc" />
+      <recent name="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Compute_layer\Core\Inc" />
+      <recent name="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\Compute_layer\Core\Src" />
+      <recent name="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\Core\Inc" />
+      <recent name="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743" />
+      <recent name="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\System_layer\Core" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="OCD STM32H743" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STM32H743" TARGET_NAME="STM32H743.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="STM32H743" RUN_TARGET_NAME="STM32H743.elf">
-      <openocd gdb-port="3333" telnet-port="4444" board-config="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\debug_OCD_config\stlink.cfg" reset-type="INIT" download-type="ALWAYS" />
+      <openocd gdb-port="3333" telnet-port="4444" board-config="D:\Hardware_development\STM32_learning_materials\STM32_project\STM32H743\cmake-build-debug\debug_OCD_config\STM32H743.cfg" reset-type="INIT" download-type="ALWAYS" />
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -96,6 +103,21 @@
       <workItem from="1628494697303" duration="738000" />
       <workItem from="1628495457160" duration="22747000" />
       <workItem from="1628534385279" duration="2659000" />
+      <workItem from="1628573956582" duration="8841000" />
+      <workItem from="1628613736220" duration="1444000" />
+      <workItem from="1629023051286" duration="7908000" />
+      <workItem from="1629043063121" duration="2036000" />
+      <workItem from="1629045213656" duration="8626000" />
+      <workItem from="1629092656164" duration="7677000" />
+      <workItem from="1629435970919" duration="4058000" />
+      <workItem from="1629546894851" duration="25010000" />
+      <workItem from="1629612959851" duration="31731000" />
+      <workItem from="1629686515863" duration="2091000" />
+      <workItem from="1629776550387" duration="4775000" />
+      <workItem from="1629790038311" duration="14242000" />
+      <workItem from="1629864774865" duration="21473000" />
+      <workItem from="1629955299727" duration="22693000" />
+      <workItem from="1629996451550" duration="6572000" />
     </task>
     <servers />
   </component>
@@ -123,58 +145,111 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="651" y="294" width="616" height="275" key="#Notifications/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628320432961" />
-    <state x="111" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628331846627">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="1920" y="-1407" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629554243404">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
     <state x="111" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628331846627" />
+    <state x="1920" y="-1407" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629554243404" />
+    <state x="2198" y="-703" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1629043000032">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state x="2198" y="-703" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629043000032" />
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1628332350814">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628332350814" />
-    <state x="2393" y="-1085" key="FileChooserDialogImpl" timestamp="1628505797439">
+    <state x="2393" y="-1085" key="FileChooserDialogImpl" timestamp="1629548511018">
       <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
     <state x="673" y="170" key="FileChooserDialogImpl/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628331841998" />
-    <state x="2393" y="-1085" key="FileChooserDialogImpl/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628505797439" />
+    <state x="2393" y="-1085" key="FileChooserDialogImpl/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629548511018" />
     <state x="1309" y="-1542" key="FileChooserDialogImpl/0.0.1536.864/836.-1920.1080.1920@836.-1920.1080.1920" timestamp="1628345635630" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1628322990070">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1037" height="572" key="GridCell.Tab.0.bottom" timestamp="1630003077844">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322990070" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1628322990070">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1037" height="572" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1630003077844" />
+    <state width="1037" height="572" key="GridCell.Tab.0.center" timestamp="1630003077843">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322990070" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1628322990070">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1037" height="572" key="GridCell.Tab.0.center/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1630003077843" />
+    <state width="1037" height="572" key="GridCell.Tab.0.left" timestamp="1630003077843">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322990070" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1628322990070">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1037" height="572" key="GridCell.Tab.0.left/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1630003077843" />
+    <state width="1037" height="572" key="GridCell.Tab.0.right" timestamp="1630003077843">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628322990070" />
+    <state width="1037" height="572" key="GridCell.Tab.0.right/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1630003077843" />
+    <state width="1037" height="432" key="GridCell.Tab.1.bottom" timestamp="1629991407827">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="432" key="GridCell.Tab.1.bottom/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629991407827" />
+    <state width="1037" height="432" key="GridCell.Tab.1.center" timestamp="1629991407827">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="432" key="GridCell.Tab.1.center/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629991407827" />
+    <state width="1037" height="432" key="GridCell.Tab.1.left" timestamp="1629991407827">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="432" key="GridCell.Tab.1.left/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629991407827" />
+    <state width="1037" height="432" key="GridCell.Tab.1.right" timestamp="1629991407827">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="432" key="GridCell.Tab.1.right/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629991407827" />
+    <state width="1037" height="432" key="GridCell.Tab.2.bottom" timestamp="1629991407827">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="432" key="GridCell.Tab.2.bottom/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629991407827" />
+    <state width="1037" height="432" key="GridCell.Tab.2.center" timestamp="1629991407827">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="432" key="GridCell.Tab.2.center/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629991407827" />
+    <state width="1037" height="432" key="GridCell.Tab.2.left" timestamp="1629991407827">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="432" key="GridCell.Tab.2.left/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629991407827" />
+    <state width="1037" height="432" key="GridCell.Tab.2.right" timestamp="1629991407827">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="432" key="GridCell.Tab.2.right/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629991407827" />
     <state x="368" y="55" width="799" height="561" key="Registry" timestamp="1628327474920">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="368" y="55" width="799" height="561" key="Registry/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628327474920" />
-    <state x="1968" y="-805" key="SettingsEditor" timestamp="1628506527155">
+    <state x="1957" y="-1087" key="SettingsEditor" timestamp="1629569666730">
       <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
     <state x="270" y="77" key="SettingsEditor/0.0.1536.864/1611.-1080.1920.1080@0.0.1536.864" timestamp="1628327368140" />
-    <state x="1968" y="-805" key="SettingsEditor/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628506527155" />
+    <state x="1957" y="-1087" key="SettingsEditor/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629569666730" />
     <state x="882" y="-1095" key="SettingsEditor/0.0.1536.864/836.-1920.1080.1920@836.-1920.1080.1920" timestamp="1628347584621" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1628494741506">
       <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628494741506" />
-    <state x="2162" y="-902" width="776" height="798" key="find.popup" timestamp="1628525818478">
+    <state x="2040" y="-995" width="776" height="798" key="find.popup" timestamp="1629656347144">
       <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
-    <state x="2162" y="-902" width="776" height="798" key="find.popup/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628525818478" />
-    <state x="2123" y="-1018" width="672" height="678" key="search.everywhere.popup" timestamp="1628529922323">
+    <state x="2040" y="-995" width="776" height="798" key="find.popup/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629656347144" />
+    <state x="2116" y="-271" key="run.anything.popup" timestamp="1629997248597">
       <screen x="1920" y="-1463" width="1080" height="1920" />
     </state>
-    <state x="2123" y="-1018" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1628529922323" />
+    <state x="2116" y="-271" key="run.anything.popup/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629997248597" />
+    <state x="2123" y="-1018" width="672" height="678" key="search.everywhere.popup" timestamp="1629865678972">
+      <screen x="1920" y="-1463" width="1080" height="1920" />
+    </state>
+    <state x="2123" y="-1018" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/1920.-1463.1080.1920@1920.-1463.1080.1920" timestamp="1629865678972" />
     <state x="1039" y="-1475" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/836.-1920.1080.1920@836.-1920.1080.1920" timestamp="1628400355680" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
+        <watch expression="Gyro_buf[0]" language="ObjectiveC" />
+        <watch expression="Gyro_X_RAW/65.5" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

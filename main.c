@@ -22,13 +22,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "cmsis_os.h"
-
-
-
-
-osThreadId defaultTaskHandle;
-void StartDefaultTask(void const * argument);
 
 
 /**
@@ -38,53 +31,25 @@ void StartDefaultTask(void const * argument);
 int main(void)
 {
 
+    printf("Begin!!!\n");
 
-  Hardware_layer_Init();/** 硬件层初始化 **/
+    Hardware_layer_Init();/** 硬件层初始化 **/
 
-  /* Create the thread(s) */
-  /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
-  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+    Compute_layer_Init();/** 计算层初始化 **/
 
-  /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
-  /* USER CODE END RTOS_THREADS */
-
-  /* Start scheduler */
-  osKernelStart();
-
-  /* We should never get here as control is now taken by the scheduler */
-
-
-
-
+    System_layer_Init();/** 系统层初始化 必须放在后面**/
 
 
 
   while (1)
   {
 
+
   }
 
 }
 
 
-
-
-/**
-  * @brief  Function implementing the defaultTask thread.
-  * @param  argument: Not used
-  * @retval None
-  */
-
-void StartDefaultTask(void const * argument)
-{
-  for(;;)
-  {
-    osDelay(1);
-  }
-
-}
 
 
 

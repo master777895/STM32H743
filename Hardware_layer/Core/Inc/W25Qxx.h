@@ -31,48 +31,35 @@ extern "C" {
 #include "main.h"
 #include "SPI.h"
 
-/** @addtogroup BSP
-  * @{
-  */
+#define SPI_Handle_W25Qxx hspi2 //spi½Ó¿Ú
 
-/** @addtogroup Components
-  * @{
-  */
 
-/** @addtogroup W25Q128FV
-  * @{
-  */
-
-/** @defgroup W25Q128FV_Exported_Types
-  * @{
-  */
 
 /**
-  * @}
-  */
+ * @brief  W25Q32FV Configuration
+ */
 
-/** @defgroup W25Q128FV_Exported_Constants
-  * @{
-  */
+#define W25Q32FV_FLASH_SIZE                  0x2000000 /* 32 MBits => 4MBytes */
+#define W25Q32FV_BLOCK_SIZE                  0x10000   /* ¿é 64 blocks of 64K Bytes */
+#define W25Q32FV_SECTOR_SIZE                0x1000    /* ÉÈÇø  1024 sectors of 4k Bytes */
+#define W25Q32FV_PAGE_SIZE                   0x100     /* Ò³ 16384 pages of 256 bytes */
 
-/**
-  * @brief  W25Q128FV Configuration
-  */
-#define W25Q128FV_FLASH_SIZE                  0x1000000 /* 128 MBits => 16MBytes */
-#define W25Q128FV_SECTOR_SIZE                 0x10000   /* 256 sectors of 64KBytes */
-#define W25Q128FV_SUBSECTOR_SIZE              0x1000    /* 4096 subsectors of 4kBytes */
-#define W25Q128FV_PAGE_SIZE                   0x100     /* 65536 pages of 256 bytes */
+#define W25Q32FV_DUMMY_CYCLES_READ           4
+#define W25Q32FV_DUMMY_CYCLES_READ_QUAD      10
 
-#define W25Q128FV_DUMMY_CYCLES_READ           4
-#define W25Q128FV_DUMMY_CYCLES_READ_QUAD      10
-
-#define W25Q128FV_BULK_ERASE_MAX_TIME         250000
-#define W25Q128FV_SECTOR_ERASE_MAX_TIME       3000
-#define W25Q128FV_SUBSECTOR_ERASE_MAX_TIME    800
+#define W25Q32FV_BULK_ERASE_MAX_TIME         250000
+#define W25Q32FV_SECTOR_ERASE_MAX_TIME       3000
+#define W25Q32FV_SUBSECTOR_ERASE_MAX_TIME    800
 #define W25Qx_TIMEOUT_VALUE 1000
 
+
+
+
+
+
+
 /**
-  * @brief  W25Q128FV Commands
+  * @brief  W25QxxFV Commands
   */
 /* Reset Operations */
 #define RESET_ENABLE_CMD                     0x66
@@ -123,9 +110,9 @@ extern "C" {
 
 
 /* Flag Status Register */
-#define W25Q128FV_FSR_BUSY                    ((uint8_t)0x01)    /*!< busy */
-#define W25Q128FV_FSR_WREN                    ((uint8_t)0x02)    /*!< write enable */
-#define W25Q128FV_FSR_QE                      ((uint8_t)0x02)    /*!< quad enable */
+#define W25Q32FV_FSR_BUSY                    ((uint8_t)0x01)    /*!< busy */
+#define W25Q32FV_FSR_WREN                    ((uint8_t)0x02)    /*!< write enable */
+#define W25Q32FV_FSR_QE                      ((uint8_t)0x02)    /*!< quad enable */
 
 
 #define W25Qx_Enable() 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET)

@@ -31,6 +31,7 @@
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32H743xx"/>
 					<Add option="-DDEBUG"/>
+					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/."/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer"/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Inc"/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc"/>
@@ -41,6 +42,9 @@
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/include"/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/CMSIS_RTOS"/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/Core/Inc"/>
+					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer"/>
+					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Inc"/>
 					<Add directory="d:\hardware_development\packets\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
 					<Add directory="d:\hardware_development\packets\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
 					<Add directory="d:\hardware_development\packets\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
@@ -69,6 +73,7 @@
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32H743xx"/>
 					<Add option="-DDEBUG"/>
+					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/."/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer"/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Inc"/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc"/>
@@ -79,6 +84,9 @@
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/include"/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/CMSIS_RTOS"/>
 					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/Core/Inc"/>
+					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer"/>
+					<Add directory="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Inc"/>
 					<Add directory="d:\hardware_development\packets\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
 					<Add directory="d:\hardware_development\packets\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
 					<Add directory="d:\hardware_development\packets\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
@@ -117,7 +125,40 @@
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/APP_layer/空.txt">
 			<Option target="STM32H743.elf"/>
 		</Unit>
-		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/空.txt">
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Compute_layer_Manager.c">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Compute_layer_Manager.h">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Inc/AHRS.h">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Inc/Basic_Algorithm.h">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Inc/Filter.h">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Inc/MPU_DATA_PROCESS.h">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Inc/REMOTE_DATA_PROCESS.h">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/AHRS.c">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/Basic_Algorithm.c">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/Filter.c">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/MPU_DATA_PROCESS.c">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c">
 			<Option target="STM32H743.elf"/>
 		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Inc/ADC.h">
@@ -127,9 +168,6 @@
 			<Option target="STM32H743.elf"/>
 		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Inc/BUZZER.h">
-			<Option target="STM32H743.elf"/>
-		</Unit>
-		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Inc/FreeRTOSConfig.h">
 			<Option target="STM32H743.elf"/>
 		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Inc/I2C.h">
@@ -157,9 +195,6 @@
 			<Option target="STM32H743.elf"/>
 		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Inc/W25Qxx.h">
-			<Option target="STM32H743.elf"/>
-		</Unit>
-		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Inc/main.h">
 			<Option target="STM32H743.elf"/>
 		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Inc/stm32h7xx_hal_conf.h">
@@ -205,12 +240,6 @@
 			<Option target="STM32H743.elf"/>
 		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/W25Qxx.c">
-			<Option target="STM32H743.elf"/>
-		</Unit>
-		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/freertos.c">
-			<Option target="STM32H743.elf"/>
-		</Unit>
-		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/main.c">
 			<Option target="STM32H743.elf"/>
 		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/stm32h7xx_it.c">
@@ -483,6 +512,18 @@
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/STM32H743VITX_FLASH.ld">
 			<Option target="STM32H743.elf"/>
 		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/Core/Inc/FreeRTOSConfig.h">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/Core/Inc/Total_Control_Task.h">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/Core/Src/Total_Control_Task.c">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/Core/Src/freertos.c">
+			<Option target="STM32H743.elf"/>
+		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c">
 			<Option target="STM32H743.elf"/>
 		</Unit>
@@ -574,6 +615,12 @@
 			<Option target="STM32H743.elf"/>
 		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/System_layer_Manager.h">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/main.c">
+			<Option target="STM32H743.elf"/>
+		</Unit>
+		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/main.h">
 			<Option target="STM32H743.elf"/>
 		</Unit>
 		<Unit filename="D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/CMakeLists.txt">

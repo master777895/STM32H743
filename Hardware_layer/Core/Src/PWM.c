@@ -200,6 +200,13 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef* htim_pwm)
         __HAL_RCC_TIM4_CLK_ENABLE();
 
     }
+    else if(htim_pwm->Instance==TIM5)
+    {
+
+        /* Peripheral clock enable */
+        __HAL_RCC_TIM5_CLK_ENABLE();
+
+    }
 
 }
 

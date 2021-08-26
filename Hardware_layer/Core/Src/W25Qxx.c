@@ -26,22 +26,99 @@ void W25Qx_Init(void)
     uint8_t ID[10]={0};
     uint8_t i=0;
 
-    BSP_W25Qx_Init();//初始化W25Q128
-    BSP_W25Qx_Read_ID(ID);//读取ID
+    BSP_W25Qx_Init();//初始化W25Q32
 
-    if((ID[0] != 0xEF) && (ID[1] != 0x17))
+
+    BSP_W25Qx_Read_ID(ID);//读取ID
+    if((ID[0] != 0xEF) || (ID[1] != 0x15))
     {
         Error_Handler();//如果 ID不对打印错误
     }
     else//ID正确，打印ID
     {
-//        printf("W25Q128 ID : ");
+//        printf("W25Q32 ID : ");
         for(i=0;i<2;i++)
         {
 //            printf("0x%02X ",ID[i]);
         }
 //        printf("\r\n\r\n");
     }
+
+}
+
+
+
+/**
+ *
+ * @param sector_number: 0~1023
+ * @param data_size: 1~4096
+ * @param data_buf
+ */
+void W25Qxx_Write_sector(uint16_t sector_number, uint16_t data_size ,uint8_t *data_buf)
+{
+
+    static uint16_t page_data_size=0;
+    static uint16_t page_number=-1; //在++后从0开始
+
+    while(data_size > 0)
+    {
+        if (data_size > 256)
+        {
+            page_data_size = 256;
+        }
+        else page_data_size = data_size;
+
+        data_size -= 256;
+        page_number++;  //从扇区的0页开始
+
+        if (BSP_W25Qx_Write(data_buf, 0 + (sector_number * W25Q32FV_SECTOR_SIZE)+(page_number*W25Q32FV_PAGE_SIZE), page_data_size) == W25Qx_OK)
+        {
+//           printf("写扇区成功\n");
+        }
+        else Error_Handler();
+    }
+
+    page_number=-1;
+    page_data_size=0;
+}
+
+
+
+
+
+/**
+ *
+ * @param sector_number :0~1023
+ * @param data_size: 0~4096
+ * @param data_buf
+ */
+void W25Qxx_Read_sector(uint16_t sector_number, uint16_t data_size ,uint8_t *data_buf)
+{
+
+
+    if(BSP_W25Qx_Read(data_buf,0+(sector_number*W25Q32FV_SECTOR_SIZE), data_size) == W25Qx_OK)
+    {
+//      printf("读取扇区数据成功！\n");
+    }
+    else
+        Error_Handler();
+
+}
+
+
+/**
+ *
+ * @param sector_number :0~1023
+ */
+void W25Qxx_Erase_sector(uint16_t sector_number)
+{
+
+    if(BSP_W25Qx_Erase_Block(sector_number) == W25Qx_OK)
+    {
+//        printf(" QSPI Erase sector ok\r\n");
+    }
+    else
+        Error_Handler();
 
 }
 
@@ -73,13 +150,13 @@ static void	BSP_W25Qx_Reset(void)
     W25Qx_Enable();
 
     /* Send the reset command */
-    HAL_SPI_Transmit(&hspi1, cmd, 2, W25Qx_TIMEOUT_VALUE);
+    HAL_SPI_Transmit(&SPI_Handle_W25Qxx, cmd, 2, W25Qx_TIMEOUT_VALUE);
     W25Qx_Disable();
 
 }
 
 /**
-  * @brief  Reads current status of the W25Q128FV.
+  * @brief  Reads current status of the W25Q32FV.
   * @retval W25Q128FV memory status
   */
 static uint8_t BSP_W25Qx_GetStatus(void)
@@ -89,13 +166,13 @@ static uint8_t BSP_W25Qx_GetStatus(void)
 
     W25Qx_Enable();
     /* Send the read status command */
-    HAL_SPI_Transmit(&hspi1, cmd, 1, W25Qx_TIMEOUT_VALUE);
+    HAL_SPI_Transmit(&SPI_Handle_W25Qxx, cmd, 1, W25Qx_TIMEOUT_VALUE);
     /* Reception of the data */
-    HAL_SPI_Receive(&hspi1,&status, 1, W25Qx_TIMEOUT_VALUE);
+    HAL_SPI_Receive(&SPI_Handle_W25Qxx,&status, 1, W25Qx_TIMEOUT_VALUE);
     W25Qx_Disable();
 
     /* Check the value of the register */
-    if((status & W25Q128FV_FSR_BUSY) != 0)
+    if((status & W25Q32FV_FSR_BUSY) != 0)
     {
         return W25Qx_BUSY;
     }
@@ -117,12 +194,12 @@ uint8_t BSP_W25Qx_WriteEnable(void)
     /*Select the FLASH: Chip Select low */
     W25Qx_Enable();
     /* Send the read ID command */
-    HAL_SPI_Transmit(&hspi1, cmd, 1, W25Qx_TIMEOUT_VALUE);
+    HAL_SPI_Transmit(&SPI_Handle_W25Qxx, cmd, 1, W25Qx_TIMEOUT_VALUE);
     /*Deselect the FLASH: Chip Select high */
     W25Qx_Disable();
 
     /* Wait the end of Flash writing */
-    while(BSP_W25Qx_GetStatus() == W25Qx_BUSY);
+    while(BSP_W25Qx_GetStatus() == W25Qx_BUSY)
     {
         /* Check for the Timeout */
         if((HAL_GetTick() - tickstart) > W25Qx_TIMEOUT_VALUE)
@@ -145,9 +222,9 @@ void BSP_W25Qx_Read_ID(uint8_t *ID)
 
     W25Qx_Enable();
     /* Send the read ID command */
-    HAL_SPI_Transmit(&hspi1, cmd, 4, W25Qx_TIMEOUT_VALUE);
+    HAL_SPI_Transmit(&SPI_Handle_W25Qxx, cmd, 4, W25Qx_TIMEOUT_VALUE);
     /* Reception of the data */
-    HAL_SPI_Receive(&hspi1,ID, 2, W25Qx_TIMEOUT_VALUE);
+    HAL_SPI_Receive(&SPI_Handle_W25Qxx,ID, 2, W25Qx_TIMEOUT_VALUE);
     W25Qx_Disable();
 
 }
@@ -171,9 +248,9 @@ uint8_t BSP_W25Qx_Read(uint8_t* pData, uint32_t ReadAddr, uint32_t Size)
 
     W25Qx_Enable();
     /* Send the read ID command */
-    HAL_SPI_Transmit(&hspi1, cmd, 4, W25Qx_TIMEOUT_VALUE);
+    HAL_SPI_Transmit(&SPI_Handle_W25Qxx, cmd, 4, W25Qx_TIMEOUT_VALUE);
     /* Reception of the data */
-    if (HAL_SPI_Receive(&hspi1, pData,Size,W25Qx_TIMEOUT_VALUE) != HAL_OK)
+    if (HAL_SPI_Receive(&SPI_Handle_W25Qxx, pData,Size,W25Qx_TIMEOUT_VALUE) != HAL_OK)
     {
         return W25Qx_ERROR;
     }
@@ -199,7 +276,7 @@ uint8_t BSP_W25Qx_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
 
     while (current_addr <= WriteAddr)
     {
-        current_addr += W25Q128FV_PAGE_SIZE;
+        current_addr += W25Q32FV_PAGE_SIZE;
     }
     current_size = current_addr - WriteAddr;
 
@@ -227,19 +304,19 @@ uint8_t BSP_W25Qx_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
 
         W25Qx_Enable();
         /* Send the command */
-        if (HAL_SPI_Transmit(&hspi1,cmd, 4, W25Qx_TIMEOUT_VALUE) != HAL_OK)
+        if (HAL_SPI_Transmit(&SPI_Handle_W25Qxx,cmd, 4, W25Qx_TIMEOUT_VALUE) != HAL_OK)
         {
             return W25Qx_ERROR;
         }
 
         /* Transmission of the data */
-        if (HAL_SPI_Transmit(&hspi1, pData,current_size, W25Qx_TIMEOUT_VALUE) != HAL_OK)
+        if (HAL_SPI_Transmit(&SPI_Handle_W25Qxx, pData,current_size, W25Qx_TIMEOUT_VALUE) != HAL_OK)
         {
             return W25Qx_ERROR;
         }
         W25Qx_Disable();
         /* Wait the end of Flash writing */
-        while(BSP_W25Qx_GetStatus() == W25Qx_BUSY);
+        while(BSP_W25Qx_GetStatus() == W25Qx_BUSY)
         {
             /* Check for the Timeout */
             if((HAL_GetTick() - tickstart) > W25Qx_TIMEOUT_VALUE)
@@ -251,7 +328,7 @@ uint8_t BSP_W25Qx_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
         /* Update the address and size variables for next page programming */
         current_addr += current_size;
         pData += current_size;
-        current_size = ((current_addr + W25Q128FV_PAGE_SIZE) > end_addr) ? (end_addr - current_addr) : W25Q128FV_PAGE_SIZE;
+        current_size = ((current_addr + W25Q32FV_PAGE_SIZE) > end_addr) ? (end_addr - current_addr) : W25Q32FV_PAGE_SIZE;
     } while (current_addr < end_addr);
 
 
@@ -278,15 +355,15 @@ uint8_t BSP_W25Qx_Erase_Block(uint32_t Address)
     /*Select the FLASH: Chip Select low */
     W25Qx_Enable();
     /* Send the read ID command */
-    HAL_SPI_Transmit(&hspi1, cmd, 4, W25Qx_TIMEOUT_VALUE);
+    HAL_SPI_Transmit(&SPI_Handle_W25Qxx, cmd, 4, W25Qx_TIMEOUT_VALUE);
     /*Deselect the FLASH: Chip Select high */
     W25Qx_Disable();
 
     /* Wait the end of Flash writing */
-    while(BSP_W25Qx_GetStatus() == W25Qx_BUSY);
+    while(BSP_W25Qx_GetStatus() == W25Qx_BUSY)
     {
         /* Check for the Timeout */
-        if((HAL_GetTick() - tickstart) > W25Q128FV_SECTOR_ERASE_MAX_TIME)
+        if((HAL_GetTick() - tickstart) > W25Q32FV_SECTOR_ERASE_MAX_TIME)
         {
             return W25Qx_TIMEOUT;
         }
@@ -310,15 +387,15 @@ uint8_t BSP_W25Qx_Erase_Chip(void)
     /*Select the FLASH: Chip Select low */
     W25Qx_Enable();
     /* Send the read ID command */
-    HAL_SPI_Transmit(&hspi1, cmd, 1, W25Qx_TIMEOUT_VALUE);
+    HAL_SPI_Transmit(&SPI_Handle_W25Qxx, cmd, 1, W25Qx_TIMEOUT_VALUE);
     /*Deselect the FLASH: Chip Select high */
     W25Qx_Disable();
 
     /* Wait the end of Flash writing */
-    while(BSP_W25Qx_GetStatus() != W25Qx_BUSY);
+    while(BSP_W25Qx_GetStatus() == W25Qx_BUSY)
     {
         /* Check for the Timeout */
-        if((HAL_GetTick() - tickstart) > W25Q128FV_BULK_ERASE_MAX_TIME)
+        if((HAL_GetTick() - tickstart) > W25Q32FV_BULK_ERASE_MAX_TIME)
         {
             return W25Qx_TIMEOUT;
         }

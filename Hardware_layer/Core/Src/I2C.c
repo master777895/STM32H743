@@ -41,11 +41,17 @@ int16_t Gyro_Z_RAW = 0;
 int16_t Temp_RAW = 0;
 
 /**
- *
+ * @note 为了保证数据的物理意义，MPU6050的加速度计是以假想球在三轴上座标值的相反数作为三个轴的加速度值。
+ * 当假想球的位置偏向一个轴的正向时，该轴的加速度读数为负值，当假想球的位置偏向一个轴的负向时，该轴的加速度读数为正值。
+ * 根据以上分析，当我们把MPU6050芯片水平放于地方，芯片表面朝向天空，此时由于受到地球重力的作用
+ * 假想球的位置偏向Z轴的负向，因此Z轴的加速度读数应为正，且在理想情况下应为g。注意，此加速度的物理意义并不是重力加速度，
+ * 而是自身运动的加速度，可以这样理解：正因为其自身运动的加速度与重力加速度大小相等方向相反，芯片才能保持静止。
  * @param Accel_buf
  */
-void MPU6050_Read_Accel(int16_t *Accel_buf)
+Vector3f MPU6050_Read_Accel(void)
 {
+    static Vector3f retu;
+
     uint8_t Rec_Data[6];
 
     //Read 6 BYTES of data starting from ACCEL_XOUT_H register
@@ -56,9 +62,15 @@ void MPU6050_Read_Accel(int16_t *Accel_buf)
     Accel_Y_RAW = (int16_t )(Rec_Data [2] <<8 | Rec_Data [3]);
     Accel_Z_RAW = (int16_t )(Rec_Data [4] <<8 | Rec_Data [5]);
 
-    Accel_buf[0] = Accel_X_RAW/4096.0; //8G的量程
-    Accel_buf[1] = Accel_Y_RAW/4096.0;
-    Accel_buf[2] = Accel_Z_RAW/4096.0;
+//    retu.x = Accel_X_RAW/4096.0; //8G的量程
+//    retu.y = Accel_Y_RAW/4096.0;
+//    retu.z = Accel_Z_RAW/4096.0;
+
+    retu.x = Accel_X_RAW; //8G的量程
+    retu.y = Accel_Y_RAW;
+    retu.z = Accel_Z_RAW;
+
+    return retu;
 }
 
 
@@ -66,8 +78,9 @@ void MPU6050_Read_Accel(int16_t *Accel_buf)
  *
  * @param Gyro_buf
  */
-void MPU6050_Read_Gyro(int16_t *Gyro_buf)
+Vector3f MPU6050_Read_Gyro(void)
 {
+    static Vector3f retu;
     uint8_t Rec_Data[6];
 
     // Read 6 BYTES of data staring from GYRO_XOUT_H register
@@ -78,23 +91,33 @@ void MPU6050_Read_Gyro(int16_t *Gyro_buf)
     Gyro_Y_RAW = (int16_t )(Rec_Data [2] << 8 | Rec_Data [3]);
     Gyro_Z_RAW = (int16_t )(Rec_Data [4] << 8 | Rec_Data [5]);
 
-    Gyro_buf[0] = Gyro_X_RAW/65.5; // ± 500 °/s
-    Gyro_buf[1] = Gyro_Y_RAW/65.5;
-    Gyro_buf[2] = Gyro_Z_RAW/65.5;
+//    retu.x = Gyro_X_RAW/65.5; // ± 500 °/s
+//    retu.y  = Gyro_Y_RAW/65.5;
+//    retu.z = Gyro_Z_RAW/65.5;
+
+    retu.x = Gyro_X_RAW;
+    retu.y = Gyro_Y_RAW;
+    retu.z = Gyro_Z_RAW;
+
+    return retu;
 }
 
 /**
  *
  * @param Temp_buf
  */
-void MPU6050_Read_Temp(int16_t *Temp_buf)
+float_t MPU6050_Read_Temp(void)
 {
+    static float_t retu;
+
     uint8_t Rec_Data[2];
 
     HAL_I2C_Mem_Read (&hi2c1 ,MPU6050_ADDR ,TEMP_OUT_H_REG ,1 ,Rec_Data  ,2 ,1000);
 
     Temp_RAW = (int16_t )(Rec_Data [0]<<8)|Rec_Data [1];
-    *Temp_buf = 36.53 + (Temp_RAW ) / 340;
+    retu = 36.53 + (Temp_RAW ) / 340;
+
+    return retu;
 }
 
 
@@ -106,6 +129,8 @@ void MPU6050_Read_Temp(int16_t *Temp_buf)
 void MPU6050_Init(void )
 {
     uint8_t check,Data;
+
+
 
     // check device ID WHO_AM_I
 
@@ -141,6 +166,8 @@ void MPU6050_Init(void )
     {
         Error_Handler();
     }
+
+
 }
 
 
@@ -197,6 +224,8 @@ void MX_I2C1_Init(void)
     {
         Error_Handler();
     }
+
+
 
 }
 

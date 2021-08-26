@@ -67,6 +67,13 @@ void MX_TIM16_Init(void)
     /* USER CODE END TIM16_Init 2 */
     HAL_TIM_MspPostInit(&htim16);
 
+    HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);
+
+
+    __HAL_TIM_SET_COMPARE(&htim16,TIM_CHANNEL_1,0);
+
+
+
 }
 
 /************************************************************************/

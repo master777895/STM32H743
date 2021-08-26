@@ -38,10 +38,12 @@ set(CMAKE_CXX_STANDARD 11)
 add_definitions(-DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG)
 
 #文件目录路径
-file(GLOB_RECURSE SOURCES "APP_layer/*.*" "Compute_layer/*.*" "System_layer/*.*" "Hardware_layer/*.*")
+file(GLOB_RECURSE SOURCES "APP_layer/*.*" "Compute_layer/*.*" "System_layer/*.*" "Hardware_layer/*.*" "main.c")
 
 #头文件路径
-include_directories(Hardware_layer
+include_directories(
+                    .
+                    Hardware_layer
                     Hardware_layer/Core/Inc
                     Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc
                     Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
@@ -50,7 +52,13 @@ include_directories(Hardware_layer
                     System_layer
                     System_layer/FreeRTOS/Source/include
                     System_layer/FreeRTOS/Source/CMSIS_RTOS
-                    System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F)
+                    System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F
+                    System_layer/Core/Inc
+                    Compute_layer
+                    Compute_layer/Core/Inc
+
+
+        )
 
 
 add_executable(${PROJECT_NAME}.elf ${SOURCES} ${LINKER_SCRIPT})

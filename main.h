@@ -28,9 +28,13 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
+#include "cmsis_os.h"
 #include "stm32h7xx_hal.h"
 #include "stdio.h"
 #include "string.h"
+#include "stdint.h"
+
+
 
 /** Hardware layer head_file **/
 #include "Hardware_layer_Manager.h"
@@ -46,9 +50,23 @@ extern "C" {
 #include "USB.h"
 #include "BOTTON.h"
 #include "W25Qxx.h"
+
+
+
+
 /** System layer head_file **/
+#include "System_layer_Manager.h"
+#include "Total_Control_Task.h"
+#include "MPU_DATA_PROCESS.h"
 
 
+
+/** Compute layer head_file **/
+#include "Compute_layer_Manager.h"
+#include "Filter.h"
+#include "Basic_Algorithm.h"
+#include "REMOTE_DATA_PROCESS.h"
+#include "AHRS.h"
 
 
 /* Private includes ----------------------------------------------------------*/

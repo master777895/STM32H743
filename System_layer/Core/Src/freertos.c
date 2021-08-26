@@ -16,47 +16,76 @@
   *
   ******************************************************************************
   */
-/* USER CODE END Header */
+
 
 /* Includes ------------------------------------------------------------------*/
 #include "FreeRTOS.h"
 #include "task.h"
 #include "main.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
 
-/* USER CODE END Includes */
+void vApplicationStackOverflowHook( TaskHandle_t xTask, char *pcTaskName );
 
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
 
-/* USER CODE END PTD */
+/**
+  * @brief  Function implementing the defaultTask thread.
+  * @param  argument: Not used
+  * @retval None
+  */
 
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
+void StartDefaultTask(void const * argument)
+{
 
-/* USER CODE END PD */
 
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
+    static double_t buff[3]={0};
 
-/* USER CODE END PM */
+    for(;;)
+    {
+//        MPU6050_Read_Temp(buff);
+//        printf("Temp = %f\n", buff[0]);
+//
+//        MPU6050_Read_Gyro(buff);
+//        printf("\nmain: Gyro: x/y/z = %f, %f, %f\n",buff[0],buff[1],buff[2]);
+//
+//        MPU6050_Read_Accel(buff);
+//        printf("Accel: x/y/z = %.2f, %.2f, %.2f\n", buff[0],buff[1],buff[2]);
+//
+//        printf("i love you\r\n");
 
-/* Private variables ---------------------------------------------------------*/
-/* USER CODE BEGIN Variables */
 
-/* USER CODE END Variables */
+        osDelay(500);
+    }
 
-/* Private function prototypes -----------------------------------------------*/
-/* USER CODE BEGIN FunctionPrototypes */
 
-/* USER CODE END FunctionPrototypes */
+
+}
+
+
+
+
+
+/**
+ * @note 任务栈溢出的回调函数
+ * @param xTask
+ * @param pcTaskName
+ */
+void vApplicationStackOverflowHook( TaskHandle_t xTask, char *pcTaskName )
+{
+
+    for(;;)
+    {
+        printf("Stack overflown! \n");
+    }
+
+}
+
+
+
 
 /* GetIdleTaskMemory prototype (linked to static allocation support) */
 void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize );
 
-/* USER CODE BEGIN GET_IDLE_TASK_MEMORY */
+
 static StaticTask_t xIdleTaskTCBBuffer;
 static StackType_t xIdleStack[configMINIMAL_STACK_SIZE];
 
@@ -67,11 +96,6 @@ void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackTy
   *pulIdleTaskStackSize = configMINIMAL_STACK_SIZE;
   /* place for user code */
 }
-/* USER CODE END GET_IDLE_TASK_MEMORY */
 
-/* Private application code --------------------------------------------------*/
-/* USER CODE BEGIN Application */
-
-/* USER CODE END Application */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

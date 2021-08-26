@@ -6,7 +6,7 @@
 #include "main.h"
 
 
-SPI_HandleTypeDef hspi2;
+
 SPI_HandleTypeDef hspi4;
 
 

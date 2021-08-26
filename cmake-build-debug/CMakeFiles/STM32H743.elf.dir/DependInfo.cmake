@@ -22,6 +22,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "../."
   "../Hardware_layer"
   "../Hardware_layer/Core/Inc"
   "../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc"
@@ -32,8 +33,17 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../System_layer/FreeRTOS/Source/include"
   "../System_layer/FreeRTOS/Source/CMSIS_RTOS"
   "../System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F"
+  "../System_layer/Core/Inc"
+  "../Compute_layer"
+  "../Compute_layer/Core/Inc"
   )
 set(CMAKE_DEPENDS_CHECK_C
+  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Compute_layer_Manager.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Compute_layer/Compute_layer_Manager.c.obj"
+  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/AHRS.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/AHRS.c.obj"
+  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/Basic_Algorithm.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/Basic_Algorithm.c.obj"
+  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/Filter.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/Filter.c.obj"
+  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/MPU_DATA_PROCESS.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/MPU_DATA_PROCESS.c.obj"
+  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/ADC.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ADC.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/BOTTON.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BOTTON.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/BUZZER.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/BUZZER.c.obj"
@@ -47,8 +57,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/ULTRA.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/ULTRA.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/USB.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/USB.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/W25Qxx.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.obj"
-  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/freertos.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.obj"
-  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/main.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/stm32h7xx_it.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/stm32h7xx_it.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/syscalls.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/syscalls.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Core/Src/sysmem.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/sysmem.c.obj"
@@ -81,6 +89,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Hardware_layer/Hardware_layer_Manager.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.obj"
+  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/Core/Src/Total_Control_Task.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/System_layer/Core/Src/Total_Control_Task.c.obj"
+  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/Core/Src/freertos.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/System_layer/Core/Src/freertos.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/croutine.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/croutine.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/event_groups.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/event_groups.c.obj"
@@ -92,6 +102,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/tasks.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/tasks.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/FreeRTOS/Source/timers.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/System_layer/FreeRTOS/Source/timers.c.obj"
   "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/System_layer_Manager.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.obj"
+  "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/main.c" "D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/cmake-build-debug/CMakeFiles/STM32H743.elf.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -108,6 +119,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../."
   "../Hardware_layer"
   "../Hardware_layer/Core/Inc"
   "../Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc"
@@ -118,6 +130,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../System_layer/FreeRTOS/Source/include"
   "../System_layer/FreeRTOS/Source/CMSIS_RTOS"
   "../System_layer/FreeRTOS/Source/portable/GCC/ARM_CM4F"
+  "../System_layer/Core/Inc"
+  "../Compute_layer"
+  "../Compute_layer/Core/Inc"
   )
 
 # Targets to which this target links.

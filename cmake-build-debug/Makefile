@@ -122,6 +122,168 @@ STM32H743.elf/fast:
 	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/build
 .PHONY : STM32H743.elf/fast
 
+Compute_layer/Compute_layer_Manager.obj: Compute_layer/Compute_layer_Manager.c.obj
+
+.PHONY : Compute_layer/Compute_layer_Manager.obj
+
+# target to build an object file
+Compute_layer/Compute_layer_Manager.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Compute_layer_Manager.c.obj
+.PHONY : Compute_layer/Compute_layer_Manager.c.obj
+
+Compute_layer/Compute_layer_Manager.i: Compute_layer/Compute_layer_Manager.c.i
+
+.PHONY : Compute_layer/Compute_layer_Manager.i
+
+# target to preprocess a source file
+Compute_layer/Compute_layer_Manager.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Compute_layer_Manager.c.i
+.PHONY : Compute_layer/Compute_layer_Manager.c.i
+
+Compute_layer/Compute_layer_Manager.s: Compute_layer/Compute_layer_Manager.c.s
+
+.PHONY : Compute_layer/Compute_layer_Manager.s
+
+# target to generate assembly for a file
+Compute_layer/Compute_layer_Manager.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Compute_layer_Manager.c.s
+.PHONY : Compute_layer/Compute_layer_Manager.c.s
+
+Compute_layer/Core/Src/AHRS.obj: Compute_layer/Core/Src/AHRS.c.obj
+
+.PHONY : Compute_layer/Core/Src/AHRS.obj
+
+# target to build an object file
+Compute_layer/Core/Src/AHRS.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/AHRS.c.obj
+.PHONY : Compute_layer/Core/Src/AHRS.c.obj
+
+Compute_layer/Core/Src/AHRS.i: Compute_layer/Core/Src/AHRS.c.i
+
+.PHONY : Compute_layer/Core/Src/AHRS.i
+
+# target to preprocess a source file
+Compute_layer/Core/Src/AHRS.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/AHRS.c.i
+.PHONY : Compute_layer/Core/Src/AHRS.c.i
+
+Compute_layer/Core/Src/AHRS.s: Compute_layer/Core/Src/AHRS.c.s
+
+.PHONY : Compute_layer/Core/Src/AHRS.s
+
+# target to generate assembly for a file
+Compute_layer/Core/Src/AHRS.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/AHRS.c.s
+.PHONY : Compute_layer/Core/Src/AHRS.c.s
+
+Compute_layer/Core/Src/Basic_Algorithm.obj: Compute_layer/Core/Src/Basic_Algorithm.c.obj
+
+.PHONY : Compute_layer/Core/Src/Basic_Algorithm.obj
+
+# target to build an object file
+Compute_layer/Core/Src/Basic_Algorithm.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/Basic_Algorithm.c.obj
+.PHONY : Compute_layer/Core/Src/Basic_Algorithm.c.obj
+
+Compute_layer/Core/Src/Basic_Algorithm.i: Compute_layer/Core/Src/Basic_Algorithm.c.i
+
+.PHONY : Compute_layer/Core/Src/Basic_Algorithm.i
+
+# target to preprocess a source file
+Compute_layer/Core/Src/Basic_Algorithm.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/Basic_Algorithm.c.i
+.PHONY : Compute_layer/Core/Src/Basic_Algorithm.c.i
+
+Compute_layer/Core/Src/Basic_Algorithm.s: Compute_layer/Core/Src/Basic_Algorithm.c.s
+
+.PHONY : Compute_layer/Core/Src/Basic_Algorithm.s
+
+# target to generate assembly for a file
+Compute_layer/Core/Src/Basic_Algorithm.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/Basic_Algorithm.c.s
+.PHONY : Compute_layer/Core/Src/Basic_Algorithm.c.s
+
+Compute_layer/Core/Src/Filter.obj: Compute_layer/Core/Src/Filter.c.obj
+
+.PHONY : Compute_layer/Core/Src/Filter.obj
+
+# target to build an object file
+Compute_layer/Core/Src/Filter.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/Filter.c.obj
+.PHONY : Compute_layer/Core/Src/Filter.c.obj
+
+Compute_layer/Core/Src/Filter.i: Compute_layer/Core/Src/Filter.c.i
+
+.PHONY : Compute_layer/Core/Src/Filter.i
+
+# target to preprocess a source file
+Compute_layer/Core/Src/Filter.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/Filter.c.i
+.PHONY : Compute_layer/Core/Src/Filter.c.i
+
+Compute_layer/Core/Src/Filter.s: Compute_layer/Core/Src/Filter.c.s
+
+.PHONY : Compute_layer/Core/Src/Filter.s
+
+# target to generate assembly for a file
+Compute_layer/Core/Src/Filter.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/Filter.c.s
+.PHONY : Compute_layer/Core/Src/Filter.c.s
+
+Compute_layer/Core/Src/MPU_DATA_PROCESS.obj: Compute_layer/Core/Src/MPU_DATA_PROCESS.c.obj
+
+.PHONY : Compute_layer/Core/Src/MPU_DATA_PROCESS.obj
+
+# target to build an object file
+Compute_layer/Core/Src/MPU_DATA_PROCESS.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/MPU_DATA_PROCESS.c.obj
+.PHONY : Compute_layer/Core/Src/MPU_DATA_PROCESS.c.obj
+
+Compute_layer/Core/Src/MPU_DATA_PROCESS.i: Compute_layer/Core/Src/MPU_DATA_PROCESS.c.i
+
+.PHONY : Compute_layer/Core/Src/MPU_DATA_PROCESS.i
+
+# target to preprocess a source file
+Compute_layer/Core/Src/MPU_DATA_PROCESS.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/MPU_DATA_PROCESS.c.i
+.PHONY : Compute_layer/Core/Src/MPU_DATA_PROCESS.c.i
+
+Compute_layer/Core/Src/MPU_DATA_PROCESS.s: Compute_layer/Core/Src/MPU_DATA_PROCESS.c.s
+
+.PHONY : Compute_layer/Core/Src/MPU_DATA_PROCESS.s
+
+# target to generate assembly for a file
+Compute_layer/Core/Src/MPU_DATA_PROCESS.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/MPU_DATA_PROCESS.c.s
+.PHONY : Compute_layer/Core/Src/MPU_DATA_PROCESS.c.s
+
+Compute_layer/Core/Src/REMOTE_DATA_PROCESS.obj: Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.obj
+
+.PHONY : Compute_layer/Core/Src/REMOTE_DATA_PROCESS.obj
+
+# target to build an object file
+Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.obj
+.PHONY : Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.obj
+
+Compute_layer/Core/Src/REMOTE_DATA_PROCESS.i: Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.i
+
+.PHONY : Compute_layer/Core/Src/REMOTE_DATA_PROCESS.i
+
+# target to preprocess a source file
+Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.i
+.PHONY : Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.i
+
+Compute_layer/Core/Src/REMOTE_DATA_PROCESS.s: Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.s
+
+.PHONY : Compute_layer/Core/Src/REMOTE_DATA_PROCESS.s
+
+# target to generate assembly for a file
+Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.s
+.PHONY : Compute_layer/Core/Src/REMOTE_DATA_PROCESS.c.s
+
 Hardware_layer/Core/Src/ADC.obj: Hardware_layer/Core/Src/ADC.c.obj
 
 .PHONY : Hardware_layer/Core/Src/ADC.obj
@@ -472,60 +634,6 @@ Hardware_layer/Core/Src/W25Qxx.s: Hardware_layer/Core/Src/W25Qxx.c.s
 Hardware_layer/Core/Src/W25Qxx.c.s:
 	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/W25Qxx.c.s
 .PHONY : Hardware_layer/Core/Src/W25Qxx.c.s
-
-Hardware_layer/Core/Src/freertos.obj: Hardware_layer/Core/Src/freertos.c.obj
-
-.PHONY : Hardware_layer/Core/Src/freertos.obj
-
-# target to build an object file
-Hardware_layer/Core/Src/freertos.c.obj:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.obj
-.PHONY : Hardware_layer/Core/Src/freertos.c.obj
-
-Hardware_layer/Core/Src/freertos.i: Hardware_layer/Core/Src/freertos.c.i
-
-.PHONY : Hardware_layer/Core/Src/freertos.i
-
-# target to preprocess a source file
-Hardware_layer/Core/Src/freertos.c.i:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.i
-.PHONY : Hardware_layer/Core/Src/freertos.c.i
-
-Hardware_layer/Core/Src/freertos.s: Hardware_layer/Core/Src/freertos.c.s
-
-.PHONY : Hardware_layer/Core/Src/freertos.s
-
-# target to generate assembly for a file
-Hardware_layer/Core/Src/freertos.c.s:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/freertos.c.s
-.PHONY : Hardware_layer/Core/Src/freertos.c.s
-
-Hardware_layer/Core/Src/main.obj: Hardware_layer/Core/Src/main.c.obj
-
-.PHONY : Hardware_layer/Core/Src/main.obj
-
-# target to build an object file
-Hardware_layer/Core/Src/main.c.obj:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.obj
-.PHONY : Hardware_layer/Core/Src/main.c.obj
-
-Hardware_layer/Core/Src/main.i: Hardware_layer/Core/Src/main.c.i
-
-.PHONY : Hardware_layer/Core/Src/main.i
-
-# target to preprocess a source file
-Hardware_layer/Core/Src/main.c.i:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.i
-.PHONY : Hardware_layer/Core/Src/main.c.i
-
-Hardware_layer/Core/Src/main.s: Hardware_layer/Core/Src/main.c.s
-
-.PHONY : Hardware_layer/Core/Src/main.s
-
-# target to generate assembly for a file
-Hardware_layer/Core/Src/main.c.s:
-	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Core/Src/main.c.s
-.PHONY : Hardware_layer/Core/Src/main.c.s
 
 Hardware_layer/Core/Src/stm32h7xx_it.obj: Hardware_layer/Core/Src/stm32h7xx_it.c.obj
 
@@ -1400,6 +1508,60 @@ Hardware_layer/Hardware_layer_Manager.c.s:
 	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/Hardware_layer/Hardware_layer_Manager.c.s
 .PHONY : Hardware_layer/Hardware_layer_Manager.c.s
 
+System_layer/Core/Src/Total_Control_Task.obj: System_layer/Core/Src/Total_Control_Task.c.obj
+
+.PHONY : System_layer/Core/Src/Total_Control_Task.obj
+
+# target to build an object file
+System_layer/Core/Src/Total_Control_Task.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/Core/Src/Total_Control_Task.c.obj
+.PHONY : System_layer/Core/Src/Total_Control_Task.c.obj
+
+System_layer/Core/Src/Total_Control_Task.i: System_layer/Core/Src/Total_Control_Task.c.i
+
+.PHONY : System_layer/Core/Src/Total_Control_Task.i
+
+# target to preprocess a source file
+System_layer/Core/Src/Total_Control_Task.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/Core/Src/Total_Control_Task.c.i
+.PHONY : System_layer/Core/Src/Total_Control_Task.c.i
+
+System_layer/Core/Src/Total_Control_Task.s: System_layer/Core/Src/Total_Control_Task.c.s
+
+.PHONY : System_layer/Core/Src/Total_Control_Task.s
+
+# target to generate assembly for a file
+System_layer/Core/Src/Total_Control_Task.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/Core/Src/Total_Control_Task.c.s
+.PHONY : System_layer/Core/Src/Total_Control_Task.c.s
+
+System_layer/Core/Src/freertos.obj: System_layer/Core/Src/freertos.c.obj
+
+.PHONY : System_layer/Core/Src/freertos.obj
+
+# target to build an object file
+System_layer/Core/Src/freertos.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/Core/Src/freertos.c.obj
+.PHONY : System_layer/Core/Src/freertos.c.obj
+
+System_layer/Core/Src/freertos.i: System_layer/Core/Src/freertos.c.i
+
+.PHONY : System_layer/Core/Src/freertos.i
+
+# target to preprocess a source file
+System_layer/Core/Src/freertos.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/Core/Src/freertos.c.i
+.PHONY : System_layer/Core/Src/freertos.c.i
+
+System_layer/Core/Src/freertos.s: System_layer/Core/Src/freertos.c.s
+
+.PHONY : System_layer/Core/Src/freertos.s
+
+# target to generate assembly for a file
+System_layer/Core/Src/freertos.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/Core/Src/freertos.c.s
+.PHONY : System_layer/Core/Src/freertos.c.s
+
 System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj: System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
 
 .PHONY : System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj
@@ -1697,6 +1859,33 @@ System_layer/System_layer_Manager.c.s:
 	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/System_layer/System_layer_Manager.c.s
 .PHONY : System_layer/System_layer_Manager.c.s
 
+main.obj: main.c.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.c.obj:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/main.c.obj
+.PHONY : main.c.obj
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) -f CMakeFiles\STM32H743.elf.dir\build.make CMakeFiles/STM32H743.elf.dir/main.c.s
+.PHONY : main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1706,6 +1895,24 @@ help:
 	@echo ... STM32H743.elf
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Compute_layer/Compute_layer_Manager.obj
+	@echo ... Compute_layer/Compute_layer_Manager.i
+	@echo ... Compute_layer/Compute_layer_Manager.s
+	@echo ... Compute_layer/Core/Src/AHRS.obj
+	@echo ... Compute_layer/Core/Src/AHRS.i
+	@echo ... Compute_layer/Core/Src/AHRS.s
+	@echo ... Compute_layer/Core/Src/Basic_Algorithm.obj
+	@echo ... Compute_layer/Core/Src/Basic_Algorithm.i
+	@echo ... Compute_layer/Core/Src/Basic_Algorithm.s
+	@echo ... Compute_layer/Core/Src/Filter.obj
+	@echo ... Compute_layer/Core/Src/Filter.i
+	@echo ... Compute_layer/Core/Src/Filter.s
+	@echo ... Compute_layer/Core/Src/MPU_DATA_PROCESS.obj
+	@echo ... Compute_layer/Core/Src/MPU_DATA_PROCESS.i
+	@echo ... Compute_layer/Core/Src/MPU_DATA_PROCESS.s
+	@echo ... Compute_layer/Core/Src/REMOTE_DATA_PROCESS.obj
+	@echo ... Compute_layer/Core/Src/REMOTE_DATA_PROCESS.i
+	@echo ... Compute_layer/Core/Src/REMOTE_DATA_PROCESS.s
 	@echo ... Hardware_layer/Core/Src/ADC.obj
 	@echo ... Hardware_layer/Core/Src/ADC.i
 	@echo ... Hardware_layer/Core/Src/ADC.s
@@ -1745,12 +1952,6 @@ help:
 	@echo ... Hardware_layer/Core/Src/W25Qxx.obj
 	@echo ... Hardware_layer/Core/Src/W25Qxx.i
 	@echo ... Hardware_layer/Core/Src/W25Qxx.s
-	@echo ... Hardware_layer/Core/Src/freertos.obj
-	@echo ... Hardware_layer/Core/Src/freertos.i
-	@echo ... Hardware_layer/Core/Src/freertos.s
-	@echo ... Hardware_layer/Core/Src/main.obj
-	@echo ... Hardware_layer/Core/Src/main.i
-	@echo ... Hardware_layer/Core/Src/main.s
 	@echo ... Hardware_layer/Core/Src/stm32h7xx_it.obj
 	@echo ... Hardware_layer/Core/Src/stm32h7xx_it.i
 	@echo ... Hardware_layer/Core/Src/stm32h7xx_it.s
@@ -1848,6 +2049,12 @@ help:
 	@echo ... Hardware_layer/Hardware_layer_Manager.obj
 	@echo ... Hardware_layer/Hardware_layer_Manager.i
 	@echo ... Hardware_layer/Hardware_layer_Manager.s
+	@echo ... System_layer/Core/Src/Total_Control_Task.obj
+	@echo ... System_layer/Core/Src/Total_Control_Task.i
+	@echo ... System_layer/Core/Src/Total_Control_Task.s
+	@echo ... System_layer/Core/Src/freertos.obj
+	@echo ... System_layer/Core/Src/freertos.i
+	@echo ... System_layer/Core/Src/freertos.s
 	@echo ... System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.obj
 	@echo ... System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.i
 	@echo ... System_layer/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.s
@@ -1881,6 +2088,9 @@ help:
 	@echo ... System_layer/System_layer_Manager.obj
 	@echo ... System_layer/System_layer_Manager.i
 	@echo ... System_layer/System_layer_Manager.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 
