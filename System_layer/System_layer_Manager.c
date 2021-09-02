@@ -6,10 +6,7 @@
 /** System layer 全局变量汇总处 */
 osThreadId defaultTask_Handle;
 osThreadId totalControlTask_Handle;
-
-
-
-
+osThreadId ESC_Calibra_Task_Handle;
 
 
 void System_layer_Init(void )
@@ -20,9 +17,17 @@ void System_layer_Init(void )
     osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 200);
     defaultTask_Handle = osThreadCreate(osThread(defaultTask), NULL);
 
+#if (ESC_CALIBRATION_MODE_NOW == 0 )//如果不是电调校准模式,创建主任务
+
     osThreadDef(totalControlTask, StartTotalControlTask, osPriorityHigh, 0, 3000);
     totalControlTask_Handle=osThreadCreate(osThread(totalControlTask), NULL);
 
+#elif (ESC_CALIBRATION_MODE_NOW == 1)//如果是电调校准模式，创建电调校准任务
+
+    osThreadDef(esc_calibra_Task, Start_ESC_Calibra_Task, osPriorityRealtime, 0, 3000);
+    ESC_Calibra_Task_Handle=osThreadCreate(osThread(esc_calibra_Task), NULL);
+
+#endif
     /* Start scheduler */
     osKernelStart();
     /* We should never get here as control is now taken by the scheduler */

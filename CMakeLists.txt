@@ -56,7 +56,7 @@ include_directories(
                     System_layer/Core/Inc
                     Compute_layer
                     Compute_layer/Core/Inc
-
+                    APP_layer
 
         )
 

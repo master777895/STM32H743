@@ -7,7 +7,7 @@
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim4;
 
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);/** 这个函数不知道是干嘛的!!! */
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 
 /**

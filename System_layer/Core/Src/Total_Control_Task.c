@@ -12,8 +12,12 @@ void StartTotalControlTask(void const * argument)
     PreviousWakeTime = xTaskGetTickCount();
 
     static int8_t begin_flag=0;
-    static int16_t temp[8];
+
     static int16_t Target_From_Remote[8] ={0};
+
+    static int8_t temp_int8t[10];
+    static int16_t temp_int16t[10];
+
     static float_t q_init[4];
     static Vector3f imu_data[2];
 
@@ -23,7 +27,10 @@ void StartTotalControlTask(void const * argument)
 
         /** PPM 数据处理 */
         memcpy(Target_From_Remote, Remote_Controller(PPM_DATA_BUFF), 8*sizeof(int16_t));
-        Remote_State_Analyse(Target_From_Remote);//判断是否解锁
+        /** 判断是否解锁，以及通道的模式 */
+        memcpy(temp_int8t, Remote_State_Analyse(Target_From_Remote), 2*sizeof(int8_t));
+
+
 
         /** IMU数据读取 */
         memcpy(imu_data, GET_MPU_DATA(), 2*sizeof(Vector3f));
@@ -46,17 +53,24 @@ void StartTotalControlTask(void const * argument)
             AHRS_by_Madgwick(&imu_data[0], &imu_data[1], q_init);
 
 
+            /** 高度惯导融合 */
 
+            /** 姿态控制 */
+            Attitude_Control(   Target_From_Remote,
+                                &CONTROLLER_BUS.PITCH_ANGLE_CONTROLLER,
+                                &CONTROLLER_BUS.ROLL_ANGLE_CONTROLLER,
+                                &CONTROLLER_BUS.YAW_ANGLE_CONTROLLER,
+                                &CONTROLLER_BUS.PITCH_GYRO_CONTROLLER,
+                                &CONTROLLER_BUS.ROLL_GYRO_CONTROLLER,
+                                &CONTROLLER_BUS.YAW_GYRO_CONTROLLER);
 
+            /** PWM总输出 */
+            PWM_Output( temp_int8t[_LOCK_FLAG],
+                        temp_int8t[_MODE],
+                        Target_From_Remote[_THROTTLE],
+                        &CONTROLLER_BUS);
         }
-
-
-
     }
-
-
-
-
 }
 
 

@@ -33,9 +33,6 @@
 #define Sampling_Freq 200//200hz
 
 
-#define M_PI_F 3.141592653589793f
-#define PI 3.1415926535898
-
 
 
 

@@ -28,9 +28,9 @@ float az	加速度计z分量
  * @brief 解算飞行器的飞行姿态，得出欧拉角
  * @param pram_accel 单位是：cm/s^2 和
  * @param pram_gyro     degree/s
- * @return 返回飞行器的三个欧拉角。
+ * @return 生成飞行器的三个欧拉角 PITCH,ROLL,YAW，全局变量
  */
-Vector3f* AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro, const float_t* q_init)
+void AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro, const float_t* q_init)
 {
     /**********************************************************/
 
@@ -134,6 +134,11 @@ Vector3f* AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro
     Pitch_Gyro= pram_gyro->x ;
     Roll_Gyro= pram_gyro->y ;
     Yaw_Gyro= pram_gyro->z ;
+
+    //全局变量赋值，以后要优化一下
+    PITCH_GYRO = pram_gyro->x;
+    ROLL_GYRO = pram_gyro->y;
+    YAW_GYRO = pram_gyro->z;
 
     Pitch_Gyro_Radian = pram_gyro->x * DEG_TO_RAD;
     Roll_Gyro_Radian = pram_gyro->y * DEG_TO_RAD;
@@ -269,7 +274,7 @@ Vector3f* AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro
         ROLL= asin(2.0f * att.q[0]* att.q[2]-2.0f * att.q[1] * att.q[3]) * RAD_TO_DEG;
         YAW = atan2(2.0f * att.q[1] * att.q[2] + 2.0f * att.q[0] * att.q[3], -2.0f * att.q[3] * att.q[3] - 2.0f * att.q[2] * att.q[2] + 1.0f) * RAD_TO_DEG;// Yaw
 
-        printf("%f, %f, %f\n",PITCH, ROLL, YAW);
+//        printf("%f, %f, %f\n",PITCH, ROLL, YAW);
     }
     else
     {

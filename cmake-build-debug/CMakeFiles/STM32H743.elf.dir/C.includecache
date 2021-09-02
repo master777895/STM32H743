@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../APP_layer/APP_layer_Manager.h
+main.h
+../APP_layer/main.h
+
 ../Compute_layer/Compute_layer_Manager.h
 main.h
 ../Compute_layer/main.h
@@ -14,13 +18,31 @@ main.h
 main.h
 ../Compute_layer/Core/Inc/main.h
 
+../Compute_layer/Core/Inc/Attitude_Control.h
+main.h
+../Compute_layer/Core/Inc/main.h
+Basic_Algorithm.h
+../Compute_layer/Core/Inc/Basic_Algorithm.h
+PID.h
+../Compute_layer/Core/Inc/PID.h
+
 ../Compute_layer/Core/Inc/Basic_Algorithm.h
 main.h
 ../Compute_layer/Core/Inc/main.h
+Attitude_Control.h
+../Compute_layer/Core/Inc/Attitude_Control.h
 
 ../Compute_layer/Core/Inc/Filter.h
 
 ../Compute_layer/Core/Inc/MPU_DATA_PROCESS.h
+main.h
+../Compute_layer/Core/Inc/main.h
+
+../Compute_layer/Core/Inc/PID.h
+main.h
+../Compute_layer/Core/Inc/main.h
+
+../Compute_layer/Core/Inc/PWM_Output.h
 main.h
 ../Compute_layer/Core/Inc/main.h
 
@@ -440,6 +462,10 @@ main.h
 MPU_DATA_PROCESS.h
 ../Hardware_layer/MPU_DATA_PROCESS.h
 
+../System_layer/Core/Inc/ESC_Calibration_Task.h
+main.h
+../System_layer/Core/Inc/main.h
+
 ../System_layer/Core/Inc/FreeRTOSConfig.h
 stdint.h
 -
@@ -677,8 +703,8 @@ System_layer_Manager.h
 ../System_layer_Manager.h
 Total_Control_Task.h
 ../Total_Control_Task.h
-MPU_DATA_PROCESS.h
-../MPU_DATA_PROCESS.h
+ESC_Calibration_Task.h
+../ESC_Calibration_Task.h
 Compute_layer_Manager.h
 ../Compute_layer_Manager.h
 Filter.h
@@ -689,10 +715,16 @@ REMOTE_DATA_PROCESS.h
 ../REMOTE_DATA_PROCESS.h
 AHRS.h
 ../AHRS.h
-
-D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/AHRS.c
-main.h
-D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/Compute_layer/Core/Src/main.h
+MPU_DATA_PROCESS.h
+../MPU_DATA_PROCESS.h
+PWM_Output.h
+../PWM_Output.h
+Attitude_Control.h
+../Attitude_Control.h
+PID.h
+../PID.h
+APP_layer_Manager.h
+../APP_layer_Manager.h
 
 D:/Hardware_development/STM32_learning_materials/STM32_project/STM32H743/System_layer/Core/Src/Total_Control_Task.c
 main.h

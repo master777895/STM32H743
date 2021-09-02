@@ -4,22 +4,34 @@
 #include "main.h"
 
 
-int8_t Remote_State_Analyse(int16_t* target_from_remote)
+
+
+/**
+ * @note 5 通道为高度手动（低位）与定高模式（高位）控制通道——定高控制）
+ *       8 通道为水平自稳（低位）到光流定点（高位）模式控制通道——定点控制
+ *       6 通道为非SDK 模式（低位）到SDK 模式（高位）控制通道——SDK 控制
+ *       7 通道为非一键降落（低位）到一键降落（高位）控制通道——降落控制
+ * @param pram_target
+ * @return 数组
+ */
+int8_t* Remote_State_Analyse(const int16_t* pram_target)
 {
 
 
-
-    static int8_t lock_flag=_LOCK;
+    static int8_t retu[2] = {0};
+    static int8_t lock_flag = _LOCK;
+    static int8_t now_mode = _INVALID;
+    static int8_t last_mode = _INVALID;
 
 /** 解锁 */
 
     static portTickType unlock_tick=0;
     static int8_t unlock_start=0, unlock_started = 0;
 
-    if(target_from_remote[_THROTTLE] == 0 \
-            && target_from_remote[_YAW] >= 199 \
-            && target_from_remote[_ROLL] == 0 \
-            && target_from_remote[_PITCH] == 0 )
+    if(pram_target[_THROTTLE] == 0 \
+            && pram_target[_YAW] >= 199 \
+            && pram_target[_ROLL] == 0 \
+            && pram_target[_PITCH] == 0 )
     {
         unlock_start = 1;
     }
@@ -35,7 +47,6 @@ int8_t Remote_State_Analyse(int16_t* target_from_remote)
         unlock_tick = 0;
     }
 
-
     if(unlock_tick != 0 \
         && (xTaskGetTickCount() - unlock_tick) >= 1500 )
     {
@@ -44,21 +55,19 @@ int8_t Remote_State_Analyse(int16_t* target_from_remote)
     }
 
 
-
     /** 上锁 */
 
     static portTickType inlock_tick=0;
     static int8_t inlock_start=0, inlock_started = 0;
 
-    if(target_from_remote[_THROTTLE] == 0 \
-            && target_from_remote[_YAW] <= -195 \
-            && target_from_remote[_ROLL] == 0 \
-            && target_from_remote[_PITCH] == 0 )
+    if(pram_target[_THROTTLE] == 0 \
+            && pram_target[_YAW] <= -195 \
+            && pram_target[_ROLL] == 0 \
+            && pram_target[_PITCH] == 0 )
     {
         inlock_start = 1;
     }
     else inlock_start = 0;
-
 
     if(inlock_start == 1 && inlock_tick == 0)
     {
@@ -69,7 +78,6 @@ int8_t Remote_State_Analyse(int16_t* target_from_remote)
         inlock_tick = 0;
     }
 
-
     if(inlock_tick != 0 \
         && (xTaskGetTickCount() - inlock_tick) >= 500 )
     {
@@ -77,12 +85,58 @@ int8_t Remote_State_Analyse(int16_t* target_from_remote)
         lock_flag = _LOCK;
     }
 
+    last_mode = now_mode;
 
+    /** 手动模式 */
+    if(pram_target[_CHANNEL5] == _LOW \
+        && pram_target[_CHANNEL6] == _LOW \
+        && pram_target[_CHANNEL7] == _LOW \
+        && pram_target[_CHANNEL8] == _LOW \
+        && last_mode != _SDK_MODE)
+    {
+        now_mode = _MANUAL_MODE;
+    }
+    /** 定高模式 */
+    else if(pram_target[_CHANNEL5] == _HIGH \
+        && pram_target[_CHANNEL6] == _LOW \
+        && pram_target[_CHANNEL7] == _LOW \
+        && pram_target[_CHANNEL8] == _LOW \
+        && last_mode != _SDK_MODE)
+    {
+        now_mode = _ALTITUDE_HOLD_MODE;
+    }
+        /** 光流定点模式 */
+    else if(pram_target[_CHANNEL5] == _HIGH \
+        && pram_target[_CHANNEL6] == _LOW \
+        && pram_target[_CHANNEL7] == _LOW \
+        && pram_target[_CHANNEL8] == _HIGH \
+        && last_mode != _SDK_MODE)
+    {
+        now_mode = _POS_HOLD_MODE;
+    }
+        /** SDK启动模式 */
+    else if(pram_target[_CHANNEL5] == _HIGH \
+        && pram_target[_CHANNEL6] == _HIGH \
+        && pram_target[_CHANNEL7] == _LOW \
+        && pram_target[_CHANNEL8] == _HIGH )
+    {
+        now_mode = _SDK_MODE;
+    }
+        /** 一键下降 */
+    else if(pram_target[_CHANNEL7] == _HIGH)
+    {
+        now_mode = _LAND_MODE;
+    }
+    else
+    {
+        now_mode = _INVALID;
+    }
 
+//    printf("lock_flag : %d || mode: %d\n", lock_flag, now_mode);
 
-//    printf("lock_flag : %d\n", lock_flag);
-
-    return lock_flag;
+    retu[_MODE] = now_mode;
+    retu[_LOCK_FLAG] = lock_flag;
+    return retu;
 }
 
 

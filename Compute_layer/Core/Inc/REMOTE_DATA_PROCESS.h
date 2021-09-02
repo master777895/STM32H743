@@ -6,6 +6,11 @@
 #define STM32H743_REMOTE_DATA_PROCESS_H
 #include "main.h"
 
+enum
+{
+    _MODE=0,
+    _LOCK_FLAG=1,
+};
 
 enum base_type
 {
@@ -35,12 +40,21 @@ enum lock_state
 
 };
 
+enum mode_state
+{
+    _MANUAL_MODE=1,
+    _ALTITUDE_HOLD_MODE,
+    _POS_HOLD_MODE,
+    _SDK_MODE,
+    _LAND_MODE,
+};
+
 
 #define MAX_ANGLE_FOR_PITCH_AND_ROLL 35
 #define MAX_ANGLE_FOR_YAW 200
 
 
-int8_t Remote_State_Analyse(int16_t* target_from_remote);
+int8_t* Remote_State_Analyse(const int16_t* target_from_remote);
 uint16_t* RC_Data_LPF_Filter(uint16_t* ppm);
 int16_t* Remote_Controller(uint16_t* PPM_DATA_BUFF_0);
 

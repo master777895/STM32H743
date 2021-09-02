@@ -57,8 +57,7 @@ extern "C" {
 /** System layer head_file **/
 #include "System_layer_Manager.h"
 #include "Total_Control_Task.h"
-#include "MPU_DATA_PROCESS.h"
-
+#include "ESC_Calibration_Task.h"
 
 
 /** Compute layer head_file **/
@@ -67,6 +66,13 @@ extern "C" {
 #include "Basic_Algorithm.h"
 #include "REMOTE_DATA_PROCESS.h"
 #include "AHRS.h"
+#include "MPU_DATA_PROCESS.h"
+#include "PWM_Output.h"
+#include "Attitude_Control.h"
+#include "PID.h"
+
+/** APP layer head_file **/
+#include "APP_layer_Manager.h"
 
 
 /* Private includes ----------------------------------------------------------*/

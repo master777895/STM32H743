@@ -28,7 +28,7 @@ void Hardware_layer_Init(void)
     MX_I2C1_Init();
 //    MX_I2C2_Init();
 //    MX_SPI1_Init();
-//    MX_TIM1_Init();
+
 //    MX_UART4_Init();
 //    MX_UART5_Init();
 //    MX_UART7_Init();
@@ -39,6 +39,7 @@ void Hardware_layer_Init(void)
 //    MX_USB_OTG_FS_PCD_Init();
 //    MX_SPI2_Init();
 //    MX_SPI4_Init();
+    MX_TIM1_Init();
     MX_TIM2_Init();
 //    MX_TIM4_Init();
     MX_TIM5_Init();

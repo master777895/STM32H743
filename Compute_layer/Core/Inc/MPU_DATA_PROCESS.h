@@ -12,10 +12,12 @@
 #define RAD_TO_DEG (180.0f / PI)
 
 //全局变量
+extern float_t PITCH, ROLL, YAW;
+extern float_t PITCH_GYRO, ROLL_GYRO, YAW_GYRO;
+
 extern float_t SIN_PITCH, COS_PITCH;
 extern float_t SIN_ROLL, COS_ROLL;
 extern float_t SIN_YAW, COS_YAW;
-extern float_t PITCH, ROLL, YAW;
 extern float_t Euler_Rotate_Matrix[3][3];
 
 

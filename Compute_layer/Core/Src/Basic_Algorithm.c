@@ -36,3 +36,19 @@ int16_t constrain_int16_t(int16_t amt, int16_t low, int16_t high)
 {
     return ((amt)<(low)?(low):((amt)>(high)?(high):(amt)));
 }
+
+float constrain_float(float amt, float low, float high)
+{
+    return ((amt)<(low)?(low):((amt)>(high)?(high):(amt)));
+}
+
+uint16_t Value_Limit(uint16_t Min,uint16_t Max,uint16_t Data)
+{
+    if(Data>=Max) Data=Max;
+    else if(Data<=Min) Data=Min;
+    return Data;
+}
+
+
+
+
