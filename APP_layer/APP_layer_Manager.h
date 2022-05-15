@@ -8,9 +8,11 @@
 
 
 
+///表示是否处于电调校准模式!!!谨慎使用！！！
+#define ESC_CALIBRATION_MODE_NOW 0
 
-#define ESC_CALIBRATION_MODE_NOW 0 //表示是否处于电调校准模式!!!谨慎使用！！！
-
+///输出调试口选择
+#define LOG usb_printf        /// uart_printf 或者 usb_printf
 
 
 

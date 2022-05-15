@@ -24,19 +24,28 @@ void Attitude_Control(const int16_t* pram_remote, \
                   parm_Yaw_Angle_Controller,
                   parm_Yaw_Gyro_Controller);
 
+//    LOG("Angle_Controller_Output: %.3f, %.3f, %.3f\n",parm_Pitch_Angle_Controller->Control_OutPut,
+//        parm_Roll_Angle_Controller->Control_OutPut,parm_Yaw_Angle_Controller->Control_OutPut);
+
     ///内环 角速度控制
     Gyro_Control(para_Pitch_Gyro_Controller,
                  para_Roll_Gyro_Controller,
                  parm_Yaw_Gyro_Controller,
+
                  parm_Pitch_Angle_Controller,
                  parm_Roll_Angle_Controller,
                  parm_Yaw_Angle_Controller);//角速度控制
+
+//    LOG("Gyro_Controller_Output: %.3f, %.3f, %.3f\n",para_Pitch_Gyro_Controller->Control_OutPut,
+//        para_Roll_Gyro_Controller->Control_OutPut,parm_Yaw_Gyro_Controller->Control_OutPut);
+
 }
 
 
 ///角度控制
 ///无头模式
 void Angle_Control( const int16_t* pram_remote, \
+
                     PID_Controller* parm_Pitch_Angle_Controller,    \
                     PID_Controller* parm_Roll_Angle_Controller,     \
                     PID_Controller* parm_Yaw_Angle_Controller,      \
@@ -45,6 +54,10 @@ void Angle_Control( const int16_t* pram_remote, \
 {
 
     static int8_t set_yaw_target_flag=1;
+
+    /** PITCH和ROLL角度期望 */
+    parm_Pitch_Angle_Controller->Expect=pram_remote[_PITCH];
+    parm_Roll_Angle_Controller->Expect =pram_remote[_ROLL];
 
     /** RITCH和ROLL角度反馈 */
     parm_Pitch_Angle_Controller->FeedBack=PITCH;
@@ -65,11 +78,11 @@ void Angle_Control( const int16_t* pram_remote, \
 
         parm_Yaw_Angle_Controller->FeedBack=YAW;//偏航角反馈
         PID_Control(parm_Yaw_Angle_Controller);//偏航角度控制
-        //偏航角速度环期望，来源于偏航角度控制器输出
+        ///偏航角速度环期望，来源于偏航角度控制器输出
         parm_Yaw_Gyro_Controller->Expect=parm_Yaw_Angle_Controller->Control_OutPut;
 
     }
-    else//拨动偏航杆，只进行内环角速度控制
+    else///拨动偏航杆，只进行内环角速度控制
     {
 
         parm_Yaw_Angle_Controller->Expect=0;///偏航角速度期望给0,不进行角度控制
@@ -104,7 +117,7 @@ void Gyro_Control(  PID_Controller* para_Pitch_Gyro_Controller, \
     static float Yaw_Feedforward_Kp=0.0f;
     static float Yaw_Feedforward_Kd=0.05f;
 
-    if(1)//俯仰、横滚方向姿态内环角速度控制器采用PID控制器
+    if(1)///俯仰、横滚方向姿态内环角速度控制器采用PID控制器
     {
         /***************内环角速度期望****************/
         para_Pitch_Gyro_Controller->Expect=para_Pitch_Angle_Controller->Control_OutPut;
@@ -122,18 +135,25 @@ void Gyro_Control(  PID_Controller* para_Pitch_Gyro_Controller, \
         PID_Control_Div_LPF_For_Gyro(para_Pitch_Gyro_Controller);
         PID_Control_Div_LPF_For_Gyro(para_Roll_Gyro_Controller);
 
+//        LOG("Integrate: %.3f, %.3f\n",para_Pitch_Gyro_Controller->Integrate,para_Roll_Gyro_Controller->Integrate);
+
+//        LOG("Gyro_Controller: %.3f, %.3f\n",para_Pitch_Gyro_Controller->Control_OutPut,
+//            para_Roll_Gyro_Controller->Control_OutPut);
+
+
         /** 用到一些神奇的操作，期望值的导数，来前馈到输出 看不懂，但是大受震撼.gif*/
-        Pitch_Gyro_Control_Expect_Delta=1000*((para_Pitch_Gyro_Controller->Expect - Last_Pitch_Gyro_Control_Expect)
+        Pitch_Gyro_Control_Expect_Delta=1000.0f*((para_Pitch_Gyro_Controller->Expect - Last_Pitch_Gyro_Control_Expect)
                         /para_Pitch_Gyro_Controller->PID_Controller_Dt);
 
-        Roll_Gyro_Control_Expect_Delta=1000*((para_Roll_Gyro_Controller->Expect - Last_Roll_Gyro_Control_Expect)
+        Roll_Gyro_Control_Expect_Delta=1000.0f*((para_Roll_Gyro_Controller->Expect - Last_Roll_Gyro_Control_Expect)
                         /para_Roll_Gyro_Controller->PID_Controller_Dt);
 
         Last_Pitch_Gyro_Control_Expect=para_Pitch_Gyro_Controller->Expect;
         Last_Roll_Gyro_Control_Expect=para_Roll_Gyro_Controller->Expect;
 
-        para_Pitch_Gyro_Controller->Control_OutPut+=Pitch_Roll_Feedforward_Kd * Pitch_Gyro_Control_Expect_Delta
-                                                            +Pitch_Roll_Feedforward_Kp * para_Pitch_Gyro_Controller->Expect;
+
+        para_Pitch_Gyro_Controller->Control_OutPut += ((Pitch_Roll_Feedforward_Kd * Pitch_Gyro_Control_Expect_Delta)
+                                            +(Pitch_Roll_Feedforward_Kp * para_Pitch_Gyro_Controller->Expect));
         para_Pitch_Gyro_Controller->Control_OutPut=constrain_float(para_Pitch_Gyro_Controller->Control_OutPut,
                                                                     -para_Pitch_Gyro_Controller->Control_OutPut_Limit,
                                                                     para_Pitch_Gyro_Controller->Control_OutPut_Limit);
@@ -143,6 +163,9 @@ void Gyro_Control(  PID_Controller* para_Pitch_Gyro_Controller, \
         para_Roll_Gyro_Controller->Control_OutPut=constrain_float(para_Roll_Gyro_Controller->Control_OutPut,
                                                                     -para_Roll_Gyro_Controller->Control_OutPut_Limit,
                                                                     para_Roll_Gyro_Controller->Control_OutPut_Limit);
+
+//        LOG("Gyro_Controller: %.3f, %.3f\n",para_Pitch_Gyro_Controller->Control_OutPut,
+//            para_Roll_Gyro_Controller->Control_OutPut);
 
     }
 

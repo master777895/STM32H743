@@ -19,8 +19,8 @@ TIM_HandleTypeDef htim5;
 void Set_RGB_Brightness(uint16_t R , uint16_t G , uint16_t B )
 {
     __HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_1,1000-R*10);
-    __HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_2,1000-G*10);
-    __HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3,1000-B*10);
+    __HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_2,1000-B*10);
+    __HAL_TIM_SET_COMPARE(&htim5,TIM_CHANNEL_3,1000-G*10);
 }
 
 /**
@@ -48,7 +48,7 @@ void MX_TIM5_Init(void)
     htim5.Instance = TIM5;/** 挂载在APB1时钟线上面 240M */
     htim5.Init.Prescaler = 24-1; //10mHZ
     htim5.Init.CounterMode = TIM_COUNTERMODE_UP;
-    htim5.Init.Period = 1000; //10000HZ 周期
+    htim5.Init.Period = 1000-1; //10000HZ 周期
     htim5.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
     htim5.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
     if (HAL_TIM_PWM_Init(&htim5) != HAL_OK)

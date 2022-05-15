@@ -15,53 +15,55 @@ void PWM_Output(const int8_t pram_lockflag,
                 const uint16_t parm_throttle,
                 ALL_PID_CONTROLLER* para_controller_bus)
 {
-
     const ALL_PID_CONTROLLER const_controller_bus = *para_controller_bus;
 
 
     uint16_t Throttle0,Throttle1,Throttle2,Throttle3;
     uint16_t Motor_PWM_1,Motor_PWM_2,Motor_PWM_3,Motor_PWM_4;
 
-    Throttle0 = Throttle_Angle_Compensate(parm_throttle);///油门倾角补偿
+//    Throttle0 = Throttle_Angle_Compensate(parm_throttle);///油门倾角补偿
 
 
     if(pram_lockflag == _UNLOCK && pram_mode != _INVALID)
     {
+        Set_RGB_Brightness(100,0,0);
+
         if(pram_mode == _MANUAL_MODE)
         {
             if(parm_throttle >= THROTTLE_START)
             {
                 Motor_PWM_1=(uint16_t)(
-                         MOTOR1_THR_SCALE   *(float)Throttle0
+                         MOTOR1_THR_SCALE   *(float)parm_throttle
                         +MOTOR1_ROLL_SCALE  *const_controller_bus.ROLL_GYRO_CONTROLLER.Control_OutPut
                         +MOTOR1_PITCH_SCALE *const_controller_bus.PITCH_GYRO_CONTROLLER.Control_OutPut
                         +MOTOR1_YAW_SCALE   *const_controller_bus.YAW_GYRO_CONTROLLER.Control_OutPut);
 
                 Motor_PWM_2=(uint16_t)(
-                         MOTOR2_THR_SCALE   *(float)Throttle0
+                         MOTOR2_THR_SCALE   *(float)parm_throttle
                         +MOTOR2_ROLL_SCALE  *const_controller_bus.ROLL_GYRO_CONTROLLER.Control_OutPut
                         +MOTOR2_PITCH_SCALE *const_controller_bus.PITCH_GYRO_CONTROLLER.Control_OutPut
                         +MOTOR2_YAW_SCALE   *const_controller_bus.YAW_GYRO_CONTROLLER.Control_OutPut);
 
                 Motor_PWM_3=(uint16_t)(
-                         MOTOR3_THR_SCALE   *(float)Throttle0
+                         MOTOR3_THR_SCALE   *(float)parm_throttle
                         +MOTOR3_ROLL_SCALE  *const_controller_bus.ROLL_GYRO_CONTROLLER.Control_OutPut
                         +MOTOR3_PITCH_SCALE *const_controller_bus.PITCH_GYRO_CONTROLLER.Control_OutPut
                         +MOTOR3_YAW_SCALE   *const_controller_bus.YAW_GYRO_CONTROLLER.Control_OutPut);
 
                 Motor_PWM_4=(uint16_t)(
-                         MOTOR4_THR_SCALE   *(float)Throttle0
+                         MOTOR4_THR_SCALE   *(float)parm_throttle
                         +MOTOR4_ROLL_SCALE  *const_controller_bus.ROLL_GYRO_CONTROLLER.Control_OutPut
                         +MOTOR4_PITCH_SCALE *const_controller_bus.PITCH_GYRO_CONTROLLER.Control_OutPut
                         +MOTOR4_YAW_SCALE   *const_controller_bus.YAW_GYRO_CONTROLLER.Control_OutPut);
 
+//                LOG("PWM: %d, %d, %d, %d\n",Motor_PWM_1,Motor_PWM_2,Motor_PWM_3,Motor_PWM_4);
             }
             else ///没有起飞
             {
-                Motor_PWM_1=(uint16_t)(Throttle0);
-                Motor_PWM_2=(uint16_t)(Throttle0);
-                Motor_PWM_3=(uint16_t)(Throttle0);
-                Motor_PWM_4=(uint16_t)(Throttle0);
+                Motor_PWM_1=(uint16_t)(parm_throttle);
+                Motor_PWM_2=(uint16_t)(parm_throttle);
+                Motor_PWM_3=(uint16_t)(parm_throttle);
+                Motor_PWM_4=(uint16_t)(parm_throttle);
 
                 ///清积分
                 Preflight_ResetIntegrate(para_controller_bus);
@@ -83,30 +85,30 @@ void PWM_Output(const int8_t pram_lockflag,
                 || pram_mode == _LAND_MODE)
         {
             Motor_PWM_1=(uint16_t)(
-                    MOTOR1_THR_SCALE   *(float)Throttle0
+                    MOTOR1_THR_SCALE   *(float)parm_throttle
                     +MOTOR1_ROLL_SCALE  *const_controller_bus.ROLL_GYRO_CONTROLLER.Control_OutPut
                     +MOTOR1_PITCH_SCALE *const_controller_bus.PITCH_GYRO_CONTROLLER.Control_OutPut
                     +MOTOR1_YAW_SCALE   *const_controller_bus.YAW_GYRO_CONTROLLER.Control_OutPut);
 
             Motor_PWM_2=(uint16_t)(
-                    MOTOR2_THR_SCALE   *(float)Throttle0
+                    MOTOR2_THR_SCALE   *(float)parm_throttle
                     +MOTOR2_ROLL_SCALE  *const_controller_bus.ROLL_GYRO_CONTROLLER.Control_OutPut
                     +MOTOR2_PITCH_SCALE *const_controller_bus.PITCH_GYRO_CONTROLLER.Control_OutPut
                     +MOTOR2_YAW_SCALE   *const_controller_bus.YAW_GYRO_CONTROLLER.Control_OutPut);
 
             Motor_PWM_3=(uint16_t)(
-                    MOTOR3_THR_SCALE   *(float)Throttle0
+                    MOTOR3_THR_SCALE   *(float)parm_throttle
                     +MOTOR3_ROLL_SCALE  *const_controller_bus.ROLL_GYRO_CONTROLLER.Control_OutPut
                     +MOTOR3_PITCH_SCALE *const_controller_bus.PITCH_GYRO_CONTROLLER.Control_OutPut
                     +MOTOR3_YAW_SCALE   *const_controller_bus.YAW_GYRO_CONTROLLER.Control_OutPut);
 
             Motor_PWM_4=(uint16_t)(
-                    MOTOR4_THR_SCALE    *(float)Throttle0
+                    MOTOR4_THR_SCALE    *(float)parm_throttle
                     +MOTOR4_ROLL_SCALE  *const_controller_bus.ROLL_GYRO_CONTROLLER.Control_OutPut
                     +MOTOR4_PITCH_SCALE *const_controller_bus.PITCH_GYRO_CONTROLLER.Control_OutPut
                     +MOTOR4_YAW_SCALE   *const_controller_bus.YAW_GYRO_CONTROLLER.Control_OutPut);
 
-            //总输出限幅
+            ///总输出限幅
             Motor_PWM_1=Value_Limit(Thr_Idle,2000,Motor_PWM_1);
             Motor_PWM_2=Value_Limit(Thr_Idle,2000,Motor_PWM_2);
             Motor_PWM_3=Value_Limit(Thr_Idle,2000,Motor_PWM_3);
@@ -123,6 +125,8 @@ void PWM_Output(const int8_t pram_lockflag,
     }
     else ///飞机没有解锁 或者 模式错误
     {
+        Set_RGB_Brightness(0,100,0);
+
         Motor_PWM_1=THR_MIN;
         Motor_PWM_2=THR_MIN;
         Motor_PWM_3=THR_MIN;
@@ -138,6 +142,12 @@ void PWM_Output(const int8_t pram_lockflag,
     Motor_PWM_2=Value_Limit(0,2000,Motor_PWM_2);
     Motor_PWM_3=Value_Limit(0,2000,Motor_PWM_3);
     Motor_PWM_4=Value_Limit(0,2000,Motor_PWM_4);
+
+//    LOG("PWM_Output: %d, %d, %d, %d, %.3f, %.3f, %.3f\n",Motor_PWM_1,Motor_PWM_2,Motor_PWM_3,Motor_PWM_4,
+//        const_controller_bus.ROLL_GYRO_CONTROLLER.Control_OutPut,
+//        const_controller_bus.PITCH_GYRO_CONTROLLER.Control_OutPut,
+//        const_controller_bus.YAW_GYRO_CONTROLLER.Control_OutPut);
+
 
     PWM_load(Motor_PWM_1,Motor_PWM_2,Motor_PWM_3,Motor_PWM_4);
 }

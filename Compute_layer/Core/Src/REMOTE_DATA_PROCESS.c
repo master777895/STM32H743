@@ -199,11 +199,11 @@ int16_t* Remote_Controller(uint16_t* PPM_DATA_BUFF_0)
 
     if(PPM_DATA_BUFF_1[0] < 1400)
     {
-        Target_from_remote[_ROLL] = (1400 - PPM_DATA_BUFF_1[0]) * MAX_ANGLE_FOR_PITCH_AND_ROLL/400;
+        Target_from_remote[_ROLL] = -(1400 - PPM_DATA_BUFF_1[0]) * MAX_ANGLE_FOR_PITCH_AND_ROLL/400;
     }
     else if (PPM_DATA_BUFF_1[0] > 1600)
     {
-        Target_from_remote[_ROLL] = - (PPM_DATA_BUFF_1[0]-1600) * MAX_ANGLE_FOR_PITCH_AND_ROLL/400;
+        Target_from_remote[_ROLL] =  (PPM_DATA_BUFF_1[0]-1600) * MAX_ANGLE_FOR_PITCH_AND_ROLL/400;
     }
     else
     {
@@ -242,11 +242,11 @@ int16_t* Remote_Controller(uint16_t* PPM_DATA_BUFF_0)
 
     if(PPM_DATA_BUFF_1[3] < 1400)
     {
-        Target_from_remote[_YAW] = (1400 - PPM_DATA_BUFF_1[3]) * MAX_ANGLE_FOR_YAW/400;
+        Target_from_remote[_YAW] = -(1400 - PPM_DATA_BUFF_1[3]) * MAX_ANGLE_FOR_YAW/400;
     }
     else if (PPM_DATA_BUFF_1[3] > 1600)
     {
-        Target_from_remote[_YAW] = - (PPM_DATA_BUFF_1[3]-1600) * MAX_ANGLE_FOR_YAW/400;
+        Target_from_remote[_YAW] =  (PPM_DATA_BUFF_1[3]-1600) * MAX_ANGLE_FOR_YAW/400;
     }
     else
     {

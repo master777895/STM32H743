@@ -50,7 +50,12 @@ extern "C" {
 #include "USB.h"
 #include "BOTTON.h"
 #include "W25Qxx.h"
-
+#include "usb_device.h"
+#include "usbd_cdc.h"
+#include "usbd_def.h"
+#include "usbd_conf.h"
+#include "usbd_cdc_if.h"
+#include "OLED.h"
 
 
 
@@ -58,6 +63,10 @@ extern "C" {
 #include "System_layer_Manager.h"
 #include "Total_Control_Task.h"
 #include "ESC_Calibration_Task.h"
+#include "Ultrasonic_Task.h"
+#include "KEY_Process.h"
+#include "OLED_Process.h"
+#include "printf.h"
 
 
 /** Compute layer head_file **/
@@ -70,9 +79,12 @@ extern "C" {
 #include "PWM_Output.h"
 #include "Attitude_Control.h"
 #include "PID.h"
+#include "Altitude_Control.h"
+
 
 /** APP layer head_file **/
 #include "APP_layer_Manager.h"
+
 
 
 /* Private includes ----------------------------------------------------------*/

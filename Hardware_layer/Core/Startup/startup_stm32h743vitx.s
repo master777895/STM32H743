@@ -121,7 +121,27 @@ Infinite_Loop:
    .section  .isr_vector,"a",%progbits
   .type  g_pfnVectors, %object
   .size  g_pfnVectors, .-g_pfnVectors
-   
+
+/*
+//Gideon
+HardFault_Handler:
+
+				MOVS r0, #4
+				MOV r1, LR
+				TST r0, r1
+				BEQ stacking_used_MSP
+				MRS R0, PSP
+				B get_LR_and_branch
+stacking_used_MSP:
+				MRS R0, MSP
+get_LR_and_branch:
+				MOV R1, LR
+				BL hard_fault_handler_c
+
+*/
+
+
+
    
 g_pfnVectors:
   .word  _estack

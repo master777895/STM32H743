@@ -5,6 +5,9 @@
 #ifndef STM32H743_SYSTEM_LAYER_MANAGER_H
 #define STM32H743_SYSTEM_LAYER_MANAGER_H
 
+
+
+
 void System_layer_Init(void );
 
 

@@ -35,29 +35,28 @@ void vApplicationStackOverflowHook( TaskHandle_t xTask, char *pcTaskName );
 
 void StartDefaultTask(void const * argument)
 {
-
-
     static double_t buff[3]={0};
+    static uint8_t count=0;
+    static portTickType PreviousWakeTime;
+    PreviousWakeTime = xTaskGetTickCount();
 
-    for(;;)
+    for(;;)///没有比这个函数优先级更低的函数
     {
-//        MPU6050_Read_Temp(buff);
-//        printf("Temp = %f\n", buff[0]);
-//
-//        MPU6050_Read_Gyro(buff);
-//        printf("\nmain: Gyro: x/y/z = %f, %f, %f\n",buff[0],buff[1],buff[2]);
-//
-//        MPU6050_Read_Accel(buff);
-//        printf("Accel: x/y/z = %.2f, %.2f, %.2f\n", buff[0],buff[1],buff[2]);
-//
-//        printf("i love you\r\n");
+        osDelayUntil(&PreviousWakeTime,10);
 
 
-        osDelay(500);
+        button_ticks();///按键扫描,不使用中断
+
+        count++;
+        if(count >= 5)
+        {
+            count=0;
+            OLED_Update();///LED更新数据
+        }
+
+
+
     }
-
-
-
 }
 
 

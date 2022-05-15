@@ -232,9 +232,19 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     if (htim->Instance == TIM6) {
         HAL_IncTick();
     }
-    else if (htim->Instance == TIM2) //一个多小时才会进一次
+    else if (htim->Instance == TIM2) ///溢出
     {
+//        printf("ppm carry\n");
         ppm_carry++;
+    }
+    else if(htim->Instance == TIM7)///us级别的延时计数器
+    {
+        ;
+    }
+    else if(htim->Instance == TIM12)
+    {
+//        printf("ultra carry\n");
+        ultra_carry++;
     }
 
 }

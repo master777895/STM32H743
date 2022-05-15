@@ -12,8 +12,8 @@
 #define PI 3.1415926535898
 
 #define ABS(X)  (((X)>0)?(X):-(X))
-#define MAX(a,b)  ((a)>(b)?(a):(b))
-#define MIN(a,b)  ((a)<(b)?(a):(b))
+//#define MAX(a,b)  ((a)>(b)?(a):(b))
+//#define MIN(a,b)  ((a)<(b)?(a):(b))
 
 
 

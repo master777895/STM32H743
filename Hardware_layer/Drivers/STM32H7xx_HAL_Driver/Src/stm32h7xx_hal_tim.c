@@ -2089,6 +2089,8 @@ HAL_StatusTypeDef HAL_TIM_IC_Start_IT(TIM_HandleTypeDef *htim, uint32_t Channel)
   TIM_CHANNEL_STATE_SET(htim, Channel, HAL_TIM_CHANNEL_STATE_BUSY);
   TIM_CHANNEL_N_STATE_SET(htim, Channel, HAL_TIM_CHANNEL_STATE_BUSY);
 
+
+    __HAL_TIM_ENABLE_IT(htim, TIM_IT_UPDATE);///Gideon
   switch (Channel)
   {
     case TIM_CHANNEL_1:

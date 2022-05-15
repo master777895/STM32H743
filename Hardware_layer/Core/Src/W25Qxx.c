@@ -18,6 +18,35 @@
 *
 *********************************************************************************************************/
 
+
+
+
+
+///测试程序
+//uint8_t data1_test[20];
+//W25Qxx_Read_sector(_TEST_SECTOR, 10,data1_test);
+//printf("Read_sector_1: %X %X %X %X %X %X %X %X %X %X\n",data1_test[0],data1_test[1],data1_test[2],data1_test[3],
+//data1_test[4],data1_test[5],data1_test[6],data1_test[7],data1_test[8],data1_test[9]);
+//
+//uint8_t data_test[]={0x01,0x02,0x03,0x03,0x05,0x06,0x07,0x08,0x09};
+//
+//W25Qxx_Erase_sector(_TEST_SECTOR);
+//W25Qxx_Write_sector(_TEST_SECTOR, 9, data_test);
+//
+//W25Qxx_Read_sector(_TEST_SECTOR, 10,data1_test);
+//printf("Read_sector_2: %X %X %X %X %X %X %X %X %X %X\n",data1_test[0],data1_test[1],data1_test[2],data1_test[3],
+//data1_test[4],data1_test[5],data1_test[6],data1_test[7],data1_test[8],data1_test[9]);
+
+
+
+
+
+
+
+
+
+
+
 /**
  * 初始化
  */
@@ -30,21 +59,38 @@ void W25Qx_Init(void)
 
 
     BSP_W25Qx_Read_ID(ID);//读取ID
+
+//    printf("ID: %X  %X\n",ID[0], ID[1]);
+
+
+
+    ///ID打印
     if((ID[0] != 0xEF) || (ID[1] != 0x15))
     {
         Error_Handler();//如果 ID不对打印错误
     }
     else//ID正确，打印ID
     {
+;
 //        printf("W25Q32 ID : ");
-        for(i=0;i<2;i++)
-        {
+//        for(i=0;i<2;i++)
+//        {
 //            printf("0x%02X ",ID[i]);
-        }
+//        }
 //        printf("\r\n\r\n");
     }
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -56,30 +102,10 @@ void W25Qx_Init(void)
  */
 void W25Qxx_Write_sector(uint16_t sector_number, uint16_t data_size ,uint8_t *data_buf)
 {
-
-    static uint16_t page_data_size=0;
-    static uint16_t page_number=-1; //在++后从0开始
-
-    while(data_size > 0)
+    if(BSP_W25Qx_Write(data_buf,sector_number*W25Q32FV_SECTOR_SIZE, data_size) == W25Qx_OK)
     {
-        if (data_size > 256)
-        {
-            page_data_size = 256;
-        }
-        else page_data_size = data_size;
-
-        data_size -= 256;
-        page_number++;  //从扇区的0页开始
-
-        if (BSP_W25Qx_Write(data_buf, 0 + (sector_number * W25Q32FV_SECTOR_SIZE)+(page_number*W25Q32FV_PAGE_SIZE), page_data_size) == W25Qx_OK)
-        {
-//           printf("写扇区成功\n");
-        }
-        else Error_Handler();
+//        printf("write_success\n");
     }
-
-    page_number=-1;
-    page_data_size=0;
 }
 
 
@@ -113,7 +139,7 @@ void W25Qxx_Read_sector(uint16_t sector_number, uint16_t data_size ,uint8_t *dat
 void W25Qxx_Erase_sector(uint16_t sector_number)
 {
 
-    if(BSP_W25Qx_Erase_Block(sector_number) == W25Qx_OK)
+    if(BSP_W25Qx_Erase_Block(0+sector_number * W25Q32FV_SECTOR_SIZE) == W25Qx_OK)
     {
 //        printf(" QSPI Erase sector ok\r\n");
     }
@@ -147,10 +173,12 @@ static void	BSP_W25Qx_Reset(void)
 {
     uint8_t cmd[2] = {RESET_ENABLE_CMD,RESET_MEMORY_CMD};
 
+    int8_t retu=10;
+
     W25Qx_Enable();
 
     /* Send the reset command */
-    HAL_SPI_Transmit(&SPI_Handle_W25Qxx, cmd, 2, W25Qx_TIMEOUT_VALUE);
+    retu = HAL_SPI_Transmit(&SPI_Handle_W25Qxx, cmd, 2, W25Qx_TIMEOUT_VALUE);
     W25Qx_Disable();
 
 }
@@ -259,49 +287,41 @@ uint8_t BSP_W25Qx_Read(uint8_t* pData, uint32_t ReadAddr, uint32_t Size)
 }
 
 /**
-  * @brief  Writes an amount of data to the QSPI memory.
+  * @brief  可以跨页来写，
   * @param  pData: Pointer to data to be written
-  * @param  WriteAddr: Write start address
-  * @param  Size: Size of data to write,No more than 256byte.
+  * @param  WriteAddr: Write start address，必须是每个扇区的开始地址
+  * @param  Size: Size of data to write
   * @retval QSPI memory status
   */
-uint8_t BSP_W25Qx_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
+uint8_t BSP_W25Qx_Write( uint8_t* pData, const uint32_t WriteAddr, uint32_t Size)
 {
+
     uint8_t cmd[4];
-    uint32_t end_addr, current_size, current_addr;
+    uint32_t end_addr, current_size=0, current_addr=0;
+    uint16_t factor_addr=0;
     uint32_t tickstart = HAL_GetTick();
 
-    /* Calculation of the size between the write address and the end of the page */
-    current_addr = 0;
 
-    while (current_addr <= WriteAddr)
+    while(Size > 256)
     {
-        current_addr += W25Q32FV_PAGE_SIZE;
-    }
-    current_size = current_addr - WriteAddr;
+        Size -= 256;
 
-    /* Check if the size of the data is less than the remaining place in the page */
-    if (current_size > Size)
-    {
-        current_size = Size;
-    }
+        current_addr = WriteAddr + factor_addr*W25Q32FV_PAGE_SIZE;///递增地址，以页为单位
+        current_size = W25Q32FV_PAGE_SIZE;
+        pData += factor_addr*W25Q32FV_PAGE_SIZE;///递增数据指针，以页为单位
 
-    /* Initialize the adress variables */
-    current_addr = WriteAddr;
-    end_addr = WriteAddr + Size;
-
-    /* Perform the write page by page */
-    do
-    {
         /* Configure the command */
         cmd[0] = PAGE_PROG_CMD;
         cmd[1] = (uint8_t)(current_addr >> 16);
         cmd[2] = (uint8_t)(current_addr >> 8);
         cmd[3] = (uint8_t)(current_addr);
 
-        /* Enable write operations */
-        BSP_W25Qx_WriteEnable();
 
+        /* Enable write operations */
+        if(BSP_W25Qx_WriteEnable() != HAL_OK)
+        {
+            Error_Handler();
+        }
         W25Qx_Enable();
         /* Send the command */
         if (HAL_SPI_Transmit(&SPI_Handle_W25Qxx,cmd, 4, W25Qx_TIMEOUT_VALUE) != HAL_OK)
@@ -315,22 +335,44 @@ uint8_t BSP_W25Qx_Write(uint8_t* pData, uint32_t WriteAddr, uint32_t Size)
             return W25Qx_ERROR;
         }
         W25Qx_Disable();
-        /* Wait the end of Flash writing */
-        while(BSP_W25Qx_GetStatus() == W25Qx_BUSY)
+        factor_addr++;
+    }
+
+    ///处理余数
+    current_addr = WriteAddr + factor_addr*W25Q32FV_PAGE_SIZE;
+    pData += factor_addr*W25Q32FV_PAGE_SIZE;
+    current_size = Size % W25Q32FV_PAGE_SIZE;
+
+    /* Configure the command */
+    cmd[0] = PAGE_PROG_CMD;
+    cmd[1] = (uint8_t)(current_addr >> 16);
+    cmd[2] = (uint8_t)(current_addr >> 8);
+    cmd[3] = (uint8_t)(current_addr);
+
+    BSP_W25Qx_WriteEnable();
+    W25Qx_Enable();
+    /* Send the command */
+    if (HAL_SPI_Transmit(&SPI_Handle_W25Qxx,cmd, 4, W25Qx_TIMEOUT_VALUE) != HAL_OK)
+    {
+        return W25Qx_ERROR;
+    }
+
+    /* Transmission of the data */
+    if (HAL_SPI_Transmit(&SPI_Handle_W25Qxx, pData,current_size, W25Qx_TIMEOUT_VALUE) != HAL_OK)
+    {
+        return W25Qx_ERROR;
+    }
+    W25Qx_Disable();
+
+    /* Wait the end of Flash writing */
+    while(BSP_W25Qx_GetStatus() == W25Qx_BUSY)
+    {
+        /* Check for the Timeout */
+        if((HAL_GetTick() - tickstart) > W25Qx_TIMEOUT_VALUE)
         {
-            /* Check for the Timeout */
-            if((HAL_GetTick() - tickstart) > W25Qx_TIMEOUT_VALUE)
-            {
-                return W25Qx_TIMEOUT;
-            }
+            return W25Qx_TIMEOUT;
         }
-
-        /* Update the address and size variables for next page programming */
-        current_addr += current_size;
-        pData += current_size;
-        current_size = ((current_addr + W25Q32FV_PAGE_SIZE) > end_addr) ? (end_addr - current_addr) : W25Q32FV_PAGE_SIZE;
-    } while (current_addr < end_addr);
-
+    }
 
     return W25Qx_OK;
 }

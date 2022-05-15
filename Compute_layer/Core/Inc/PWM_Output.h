@@ -26,15 +26,15 @@
 #define MOTOR3_ROLL_SCALE 1.0f
 #define MOTOR4_ROLL_SCALE -1.0f
 
-#define MOTOR1_PITCH_SCALE 1.0f
-#define MOTOR2_PITCH_SCALE -1.0f
-#define MOTOR3_PITCH_SCALE 1.0f
-#define MOTOR4_PITCH_SCALE -1.0f
+#define MOTOR1_PITCH_SCALE -1.0f
+#define MOTOR2_PITCH_SCALE 1.0f
+#define MOTOR3_PITCH_SCALE -1.0f
+#define MOTOR4_PITCH_SCALE 1.0f
 
-#define MOTOR1_YAW_SCALE -1.0f
-#define MOTOR2_YAW_SCALE -1.0f
-#define MOTOR3_YAW_SCALE 1.0f
-#define MOTOR4_YAW_SCALE 1.0f
+#define MOTOR1_YAW_SCALE 1.0f
+#define MOTOR2_YAW_SCALE 1.0f
+#define MOTOR3_YAW_SCALE -1.0f
+#define MOTOR4_YAW_SCALE -1.0f
 
 void PWM_Output(int8_t pram_lockflag,
                 int8_t pram_mode,

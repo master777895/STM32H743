@@ -27,7 +27,7 @@ void MX_TIM1_Init(void)
     htim1.Instance = TIM1;
     htim1.Init.Prescaler = 240-1;/** 1us = 0.001ms = 0.000001s */
     htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-    htim1.Init.Period = 2500; /** 2.5ms 也就是400HZ */
+    htim1.Init.Period = 2500-1; /** 2.5ms 也就是400HZ */
     htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
     htim1.Init.RepetitionCounter = 0;
     htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;

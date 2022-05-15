@@ -21,9 +21,9 @@ void PID_Init(void)
     PID_init_parameter(&CONTROLLER_BUS.ROLL_ANGLE_CONTROLLER, _PID_ROLL_ANGLE);
     PID_init_parameter(&CONTROLLER_BUS.YAW_ANGLE_CONTROLLER, _PID_YAW_ANGLE);
 
-    PID_init_parameter(&CONTROLLER_BUS.PITCH_GYRO_CONTROLLER, _PID_PITCH_ANGLE);
-    PID_init_parameter(&CONTROLLER_BUS.ROLL_GYRO_CONTROLLER, _PID_ROLL_ANGLE);
-    PID_init_parameter(&CONTROLLER_BUS.YAW_GYRO_CONTROLLER, _PID_YAW_ANGLE);
+    PID_init_parameter(&CONTROLLER_BUS.PITCH_GYRO_CONTROLLER, _PID_PITCH_GYRO);
+    PID_init_parameter(&CONTROLLER_BUS.ROLL_GYRO_CONTROLLER, _PID_ROLL_GYRO);
+    PID_init_parameter(&CONTROLLER_BUS.YAW_GYRO_CONTROLLER, _PID_YAW_GYRO);
 
 
     Set_Cutoff_Frequency(50, 5 ,&Control_Device_SDK_Err_LPF_Parameter);//100 5
@@ -56,11 +56,13 @@ void PID_init_parameter(PID_Controller* para_controller, PID_control_type para_l
     para_controller->Kd                     =PID_CONTROL_UNIT[para_label][13];//14控制参数Ki
     para_controller->Control_OutPut         =PID_CONTROL_UNIT[para_label][14];//15控制器总输出
     para_controller->Last_Control_OutPut    =PID_CONTROL_UNIT[para_label][15];//16上次控制器总输出
-    para_controller->Control_OutPut_Limit   =PID_CONTROL_UNIT[para_label][16];//17上次控制器总输出
+    para_controller->Control_OutPut_Limit   =PID_CONTROL_UNIT[para_label][16];//17限幅
     para_controller->Scale_Kp               =PID_CONTROL_UNIT[para_label][17];
     para_controller->Scale_Ki               =PID_CONTROL_UNIT[para_label][18];
     para_controller->Scale_Kd               =PID_CONTROL_UNIT[para_label][19];
     para_controller->PID_type               =PID_CONTROL_UNIT[para_label][20];//控制器类型
+
+    para_controller->PID_Controller_Dt = 0.005f;///控制周期
 
     ///判定是否同步
     if(para_label != (uint32_t)PID_CONTROL_UNIT[para_label][20])
@@ -80,10 +82,15 @@ float PID_Control(PID_Controller *pram_controler)
     if(pram_controler->PID_type == _PID_YAW_ANGLE)
     {
         /***********************偏航角偏差超过+-180处理*****************************/
-        if(pram_controler->Err<-180)
-            pram_controler->Err=pram_controler->Err+360;
-        if(pram_controler->Err>180)
-            pram_controler->Err=pram_controler->Err-360;
+//        if(pram_controler->Err<-180)
+//            pram_controler->Err=pram_controler->Err+360;
+//        if(pram_controler->Err>180)
+//            pram_controler->Err=pram_controler->Err-360;
+//
+//        if(pram_controler->Err<-360)
+//        {
+//
+//        }
     }
 
     if(pram_controler->Err_Limit_Flag==1)///偏差限幅度标志位
@@ -101,7 +108,7 @@ float PID_Control(PID_Controller *pram_controler)
             pram_controler->Integrate+=pram_controler->Scale_Ki*pram_controler->Ki*
                                         pram_controler->Err*controller_dt;
     }
-    else/// ?????? 这个的意义何在
+    else
     {
         pram_controler->Integrate+=pram_controler->Scale_Ki*pram_controler->Ki*pram_controler->Err*controller_dt;
     }
@@ -179,6 +186,7 @@ float PID_Control_Div_LPF_For_Gyro(PID_Controller *Controler)
         if(Controler->Err>=Controler->Err_Max)   Controler->Err= Controler->Err_Max;
         if(Controler->Err<=-Controler->Err_Max)  Controler->Err=-Controler->Err_Max;
     }
+
     /*******积分计算*********************/
     if(Controler->Integrate_Separation_Flag==1)//积分分离标志位
     {
@@ -189,6 +197,7 @@ float PID_Control_Div_LPF_For_Gyro(PID_Controller *Controler)
     {
         Controler->Integrate+=Controler->Scale_Ki*Controler->Ki*Controler->Err*controller_dt;
     }
+
     /*******积分限幅*********************/
     if(Controler->Integrate_Limit_Flag==1)//积分限制幅度标志
     {
@@ -202,6 +211,9 @@ float PID_Control_Div_LPF_For_Gyro(PID_Controller *Controler)
     Controler->Control_OutPut=Controler->Scale_Kp*Controler->Kp*Controler->Err//比例
                               +Controler->Integrate//积分
                               +Controler->Adaptable_Kd*Controler->Dis_Err;//微分
+
+
+
     //+Controler->Adaptable_Kd*Controler->Dis_Error_History[0];//微分项来源于巴特沃斯低通滤波器
     /*******总输出限幅*********************/
     if(Controler->Control_OutPut>=Controler->Control_OutPut_Limit)

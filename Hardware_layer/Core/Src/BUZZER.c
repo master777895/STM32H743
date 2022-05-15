@@ -6,6 +6,46 @@
 
 TIM_HandleTypeDef htim16;
 
+
+
+
+/**
+ *
+ * @param switch_flag
+ * @param para_frequency 0~10000
+ * @param para_volume 2
+ */
+void Buzzer_Set(const int8_t switch_flag,const uint16_t para_frequency,const uint16_t para_volume)
+{
+
+    if(switch_flag == _BUZZER_ON)
+    {
+//        HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);
+        __HAL_TIM_SET_AUTORELOAD(&htim16,(100000/para_frequency)-1);
+        __HAL_TIM_SET_COMPARE(&htim16,TIM_CHANNEL_1,(100000/para_frequency)/2);
+
+    }
+    else if(switch_flag == _BUZZER_OFF)
+    {
+        __HAL_TIM_SET_COMPARE(&htim16,TIM_CHANNEL_1,0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
   * @brief TIM16 蜂鸣器
   * @param None
@@ -25,9 +65,9 @@ void MX_TIM16_Init(void)
 
     /* USER CODE END TIM16_Init 1 */
     htim16.Instance = TIM16;
-    htim16.Init.Prescaler = 0;
+    htim16.Init.Prescaler = 2400-1; ///100000hz
     htim16.Init.CounterMode = TIM_COUNTERMODE_UP;
-    htim16.Init.Period = 65535;
+    htim16.Init.Period = 100-1; ///0~10000 , 100000/100 = 1000Hz
     htim16.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
     htim16.Init.RepetitionCounter = 0;
     htim16.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -70,6 +110,9 @@ void MX_TIM16_Init(void)
     HAL_TIM_PWM_Start(&htim16,TIM_CHANNEL_1);
 
 
+
+
+
     __HAL_TIM_SET_COMPARE(&htim16,TIM_CHANNEL_1,0);
 
 
@@ -87,7 +130,18 @@ void MX_TIM16_Init(void)
 */
 void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
 {
-    if(htim_base->Instance==TIM16)
+    if(htim_base->Instance==TIM7)///us级别的延时定时器
+    {
+        /* USER CODE BEGIN TIM7_MspInit 0 */
+
+        /* USER CODE END TIM7_MspInit 0 */
+        /* Peripheral clock enable */
+        __HAL_RCC_TIM7_CLK_ENABLE();
+        /* USER CODE BEGIN TIM7_MspInit 1 */
+
+        /* USER CODE END TIM7_MspInit 1 */
+    }
+    else if(htim_base->Instance==TIM16)
     {
         /* USER CODE BEGIN TIM16_MspInit 0 */
 

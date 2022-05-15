@@ -47,31 +47,30 @@ Vector3f* GET_MPU_DATA(void)
     static Vector3f Gyro0,Gyro1,Gyro2,Gyro3;
     float_t temperature=0;
 
-
     /** 读取数据 **/
     Accel0 = MPU6050_Read_Accel();
     Gyro0 = MPU6050_Read_Gyro();
     temperature = MPU6050_Read_Temp();
 
-    /** 修正坐标极性 */
-    Accel0.x = -Accel0.x;
-    Accel0.y = -Accel0.y;
+    /** 修正坐标极性 非常重要*/
+    Accel0.x = Accel0.x;
+    Accel0.y = Accel0.y;
     Accel0.z = -Accel0.z;
 
-    Gyro0.x = Gyro0.x;
-    Gyro0.y = Gyro0.y;
-    Gyro0.z = -Gyro0.z;
+    Gyro0.x = -Gyro0.x;
+    Gyro0.y = -Gyro0.y;
+    Gyro0.z = Gyro0.z;
 
-//    printf("%f, %f, %f || %f, %f, %f\n", \
+//    LOG("%f, %f, %f || %f, %f, %f\n", \
 //                Accel0.x,Accel0.y,Accel0.z, \
 //                Gyro0.x,Gyro0.y,Gyro0.z);
 
 /** 加速度处理 **/
-    Accel1 = Accel_Filter(&Accel0);//升级
+    Accel1 = Accel_Filter(&Accel0);///升级
 /** 角速度处理 **/
     Gyro1 = Gyro_Filer(&Gyro0);
 
-//    printf("%f, %f, %f || %f, %f, %f\n", \
+//    LOG("%f, %f, %f || %f, %f, %f\n", \
 //                Accel1.x,Accel1.y,Accel1.z, \
 //                Gyro1.x,Gyro1.y,Gyro1.z);
 
@@ -87,7 +86,7 @@ Vector3f* GET_MPU_DATA(void)
         time_cnt2++;
         if(time_cnt >= 100/UNTIL_DELAY)//100ms后面的数据才要.
         {
-            time_cnt2--;//防止数据溢出
+            time_cnt2--;///防止数据溢出
 
             temp_accel = Accel_calibration(&Accel1); //加速度校正
             temp_gyro = Gyro_calibration(&Gyro1); //角速度校正
@@ -106,19 +105,19 @@ Vector3f* GET_MPU_DATA(void)
         Gyro2 = Gyro_Quantizer(&Gyro1);
 
         /** 修正 ,后面的数字是人工看出来的，后面需要优化*/
-        Accel2.x = Accel2.x - Calibrated_Accel.x - 3.0f;
-        Accel2.y = Accel2.y - Calibrated_Accel.y - 10.0f;
-        Accel2.z = Accel2.z - Calibrated_Accel.z - 29.0f;
+        Accel2.x = Accel2.x - Calibrated_Accel.x;
+        Accel2.y = Accel2.y - Calibrated_Accel.y;
+        Accel2.z = Accel2.z - Calibrated_Accel.z;
 
         Gyro2.x = Gyro2.x - Calibrated_Gyro.x ;
         Gyro2.y = Gyro2.y - Calibrated_Gyro.y ;
-        Gyro2.z = Gyro2.z - Calibrated_Gyro.z -0.5f;
+        Gyro2.z = Gyro2.z - Calibrated_Gyro.z ;
 
-//        printf("%f, %f, %f || %f, %f, %f\n", \
+//        LOG("%f, %f, %f || %f, %f, %f\n", \
 //                Calibrated_Accel.x,Calibrated_Accel.y, Calibrated_Accel.z, \
 //                Calibrated_Gyro.x,Calibrated_Gyro.y,Calibrated_Gyro.z);
 
-//        printf(" %f, %f, %f, %f, %f, %f\n", \
+//        LOG(" %f, %f, %f, %f, %f, %f\n", \
 //                Accel2.x,Accel2.y,Accel2.z, \
 //                Gyro2.x,Gyro2.y,Gyro2.z);
 
@@ -213,19 +212,25 @@ Vector3f Accel_calibration(const Vector3f* parm_Accel)
 
     static Vector3f retu={0};
     float buff[3][2] = {{0}};
+    static uint32_t count=0;
 
     static Vector3f accel1;
 
     accel1 = Accel_Quantizer(parm_Accel);
 
-    buff[_X][0] = accel1.x - 0.0f ;//误差
-    buff[_X][1] = (buff[_X][1] + buff[_X][0])/2.0f; //平均误差
+    buff[_X][0] = accel1.x - 0.0f ;///误差
+    buff[_X][1] = (float)((buff[_X][1] * ((double)count / ((double)count+1.0)))
+                        + (buff[_X][0] * (1.0/((double)count+1.0)))); ///平均误差
 
-    buff[_Y][0] = accel1.y - 0.0f ;//误差
-    buff[_Y][1] = (buff[_Y][1] + buff[_Y][0])/2.0f; //平均误差
+    buff[_Y][0] = accel1.y - 0.0f ;///误差
+    buff[_Y][1] = (float)((buff[_Y][1] * ((double)count / ((double)count+1.0)))
+                          + (buff[_Y][0] * (1.0/((double)count+1.0)))); ///平均误差
 
-    buff[_Z][0] = accel1.z - 0.0f ;//误差
-    buff[_Z][1] = (buff[_Z][1] + buff[_Z][0])/2.0f; //平均误差
+    buff[_Z][0] = accel1.z - 0.0f ;///误差
+    buff[_Z][1] = (float)((buff[_Z][1] * ((double)count / ((double)count+1.0)))
+                          + (buff[_Z][0] * (1.0/((double)count+1.0)))); ///平均误差
+
+    count++;
 
     retu.x = buff[_X][1];
     retu.y = buff[_Y][1];
@@ -239,19 +244,23 @@ Vector3f Gyro_calibration(const Vector3f* parm_Gyro)
 {
     static Vector3f retu={0};
     float buff[3][2] = {{0}};
+    static uint32_t count=0;
 
     static Vector3f gyro1;
 
     gyro1 = Gyro_Quantizer(parm_Gyro);
 
     buff[_X][0] = gyro1.x - 0.0f ;//误差
-    buff[_X][1] = (buff[_X][1] + buff[_X][0])/2.0f; //平均误差
+    buff[_X][1] = (float)((buff[_X][1] * ((double)count / ((double)count+1.0)))
+                          + (buff[_X][0] * (1.0/((double)count+1.0)))); ///平均误差
 
     buff[_Y][0] = gyro1.y - 0.0f ;//误差
-    buff[_Y][1] = (buff[_Y][1] + buff[_Y][0])/2.0f; //平均误差
+    buff[_Y][1] = (float)((buff[_Y][1] * ((double)count / ((double)count+1.0)))
+                          + (buff[_Y][0] * (1.0/((double)count+1.0)))); ///平均误差
 
     buff[_Z][0] = gyro1.z - 0.0f ;//误差
-    buff[_Z][1] = (buff[_Z][1] + buff[_Z][0])/2.0f; //平均误差
+    buff[_Z][1] = (float)((buff[_Z][1] * ((double)count / ((double)count+1.0)))
+                          + (buff[_Z][0] * (1.0/((double)count+1.0)))); ///平均误差
 
     retu.x = buff[_X][1];
     retu.y = buff[_Y][1];

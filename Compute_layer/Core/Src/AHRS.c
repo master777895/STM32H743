@@ -57,7 +57,12 @@ void AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro, con
 
     static float_t exIntegra=0;
 
+
+
     static const float_t Ki=0.01f, Kp=20.0f;
+
+//    static const float_t Ki=0.00f, Kp=00.0f;
+
 //    static float Acceleration_Length;//是个在SINS里面生成的数值
 
 
@@ -135,9 +140,9 @@ void AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro, con
     Roll_Gyro= pram_gyro->y ;
     Yaw_Gyro= pram_gyro->z ;
 
-    //全局变量赋值，以后要优化一下
-    PITCH_GYRO = pram_gyro->x;
-    ROLL_GYRO = pram_gyro->y;
+    ///全局变量赋值，以后要优化一下
+    PITCH_GYRO = -pram_gyro->x;
+    ROLL_GYRO = -pram_gyro->y;
     YAW_GYRO = pram_gyro->z;
 
     Pitch_Gyro_Radian = pram_gyro->x * DEG_TO_RAD;
@@ -163,7 +168,7 @@ void AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro, con
     /** 角速度模长滤波 */
     Gyro_Length_Filter=LPButterworth(Gyro_Length,
                                      &Butter_Buffer_Gyro_Length,&Butter_5HZ_Parameter_Acce);
-//    printf("%f\n",Gyro_Length_Filter);
+//    LOG("%f\n",Gyro_Length_Filter);
 
     /** 加速度计输出有效时,利用加速度计补偿陀螺仪 */
     if(!((pram_accel->x == 0.0f) && (pram_accel->y == 0.0f) && (pram_accel->z == 0.0f)))
@@ -239,7 +244,7 @@ void AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro, con
         gz = pram_gyro->z * DEG_TO_RAD +exIntegra + Kp*ez;
 
         /** 四元数微分方程计算本次待矫正四元数,求出四元数的微分,利用角速度求出四元数 */
-        // https://blog.csdn.net/a735148617/article/details/114786861?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0.essearch_pc_relevant&spm=1001.2101.3001.4242
+        /// https://blog.csdn.net/a735148617/article/details/114786861?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0.essearch_pc_relevant&spm=1001.2101.3001.4242
         qDot1 = 0.5f * (-att.q[1] * gx - att.q[2] * gy - att.q[3] * gz);
         qDot2 = 0.5f * ( att.q[0] * gx + att.q[2] * gz - att.q[3] * gy);
         qDot3 = 0.5f * ( att.q[0] * gy - att.q[1] * gz + att.q[3] * gx);
@@ -253,7 +258,7 @@ void AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro, con
         /** 补偿由四元数微分方程引入的姿态误差 */
         /** 将四元数姿态导数积分,得到当前四元数姿态 */
         /** 使用二阶毕卡求解微分方程 */
-        //https://blog.csdn.net/zhangyufeikk/article/details/94594646
+        ///https://blog.csdn.net/zhangyufeikk/article/details/94594646
         /** 注意这里的二阶毕卡和总姿态融合算法的计算，对于t和t+1次序的问题，需要注意 */
         delta_e2 = (IMU_Dt * gx) * (IMU_Dt * gx) + (IMU_Dt * gy) * (IMU_Dt * gy) + (IMU_Dt * gz) * (IMU_Dt * gz);
         att.q[0] = (1.0f - delta_e2 / 8.0f) * att.q[0] + qDot1 * IMU_Dt;
@@ -270,9 +275,14 @@ void AHRS_by_Madgwick(const Vector3f* pram_accel, const Vector3f* pram_gyro, con
 
         /** 四元数到欧拉角转换,转换顺序为Z-Y-X,参见<Representing Attitude: Euler Angles, Unit Quaternions, and Rotation Vectors>.pdf一文,P24 */
         /** https://www.cnblogs.com/21207-iHome/p/6894128.html */
-        PITCH= atan2(2.0f * att.q[2] * att.q[3] + 2.0f * att.q[0] * att.q[1], -2.0f * att.q[1] * att.q[1] - 2.0f * att.q[2]* att.q[2] + 1.0f) * RAD_TO_DEG;// Pitch
-        ROLL= asin(2.0f * att.q[0]* att.q[2]-2.0f * att.q[1] * att.q[3]) * RAD_TO_DEG;
+        PITCH= -atan2(2.0f * att.q[2] * att.q[3] + 2.0f * att.q[0] * att.q[1], -2.0f * att.q[1] * att.q[1] - 2.0f * att.q[2]* att.q[2] + 1.0f) * RAD_TO_DEG;// Pitch
+        ROLL= -asin(2.0f * att.q[0]* att.q[2]-2.0f * att.q[1] * att.q[3]) * RAD_TO_DEG;
         YAW = atan2(2.0f * att.q[1] * att.q[2] + 2.0f * att.q[0] * att.q[3], -2.0f * att.q[3] * att.q[3] - 2.0f * att.q[2] * att.q[2] + 1.0f) * RAD_TO_DEG;// Yaw
+        if(YAW<0)
+        {
+            YAW += 360;
+        }
+
 
 //        printf("%f, %f, %f\n",PITCH, ROLL, YAW);
     }

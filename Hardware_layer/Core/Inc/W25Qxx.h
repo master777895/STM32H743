@@ -35,6 +35,31 @@ extern "C" {
 
 
 
+
+enum Flash_Sector_Allocation
+{
+    _TEST_SECTOR=0,
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  * @brief  W25Q32FV Configuration
  */
@@ -115,8 +140,8 @@ extern "C" {
 #define W25Q32FV_FSR_QE                      ((uint8_t)0x02)    /*!< quad enable */
 
 
-#define W25Qx_Enable() 			HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET)
-#define W25Qx_Disable() 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET)
+#define W25Qx_Enable() 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_RESET)
+#define W25Qx_Disable() 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET)
 
 #define W25Qx_OK            ((uint8_t)0x00)
 #define W25Qx_ERROR         ((uint8_t)0x01)

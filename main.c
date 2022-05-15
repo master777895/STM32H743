@@ -24,14 +24,12 @@
 #include "main.h"
 
 
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
+
+
 int main(void)
 {
 
-    printf("Begin!!!\n");
+
 
     Hardware_layer_Init();/** 硬件层初始化 **/
 
@@ -39,16 +37,8 @@ int main(void)
 
     System_layer_Init();/** 系统层初始化 必须放在后面**/
 
-
-
-  while (1)
-  {
-
-
-  }
-
+    while (1);
 }
-
 
 
 

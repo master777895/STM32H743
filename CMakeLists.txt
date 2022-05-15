@@ -49,6 +49,10 @@ include_directories(
                     Hardware_layer/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
                     Hardware_layer/Drivers/CMSIS/Device/ST/STM32H7xx/Include
                     Hardware_layer/Drivers/CMSIS/Include
+                    Hardware_layer/STM32_USB_Device_Library/Class/CDC/Inc
+                    Hardware_layer/STM32_USB_Device_Library/Core/Inc
+                    Hardware_layer/STM32_USB_Device_Library/App
+                    Hardware_layer/STM32_USB_Device_Library/Target
                     System_layer
                     System_layer/FreeRTOS/Source/include
                     System_layer/FreeRTOS/Source/CMSIS_RTOS

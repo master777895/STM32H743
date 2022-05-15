@@ -35,13 +35,17 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
     static uint64_t ppm_last_time=0;//可以一直累加很久不怕数据溢出了。
     static uint64_t ppm_now_time=0;
     static uint32_t ppm_real_time=0;
-
     static uint16_t PPM_data_buf[8];//8通道
+
+    static uint8_t ultra_begin_flag=0;
+    static uint64_t ultra_begin_time=0;
+    static uint32_t ultra_real_time=0;
+    static float_t Distance=0;
 
     if( htim->Instance == TIM2 )
     {
         ppm_last_time = ppm_now_time;
-        ppm_now_time = HAL_TIM_ReadCapturedValue(&htim2,TIM_CHANNEL_1) + 4294967295*ppm_carry;
+        ppm_now_time = HAL_TIM_ReadCapturedValue(&htim2,TIM_CHANNEL_1) + 4294967296*ppm_carry;
 
         ppm_real_time = ppm_now_time - ppm_last_time;
 
@@ -72,6 +76,44 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
             ppm_cnt=0;
         }
     }
+
+    else if(htim->Instance == TIM12)///超声波数据读取
+    {
+
+        if(ultra_begin_flag == 0)
+        {
+            ultra_carry=0;
+            ultra_begin_time = HAL_TIM_ReadCapturedValue(&htim12,TIM_CHANNEL_1);
+
+            __HAL_TIM_SET_CAPTUREPOLARITY(&htim12,TIM_CHANNEL_1,TIM_ICPOLARITY_FALLING);
+
+            ultra_begin_flag = 1;
+        }
+        else if(ultra_begin_flag == 1)
+        {
+
+            ultra_real_time = HAL_TIM_ReadCapturedValue(&htim12,TIM_CHANNEL_1) + (ultra_carry*65536)
+                                - ultra_begin_time;
+
+            __HAL_TIM_SET_CAPTUREPOLARITY(&htim12,TIM_CHANNEL_1,TIM_ICPOLARITY_RISING);
+
+            ultra_begin_flag = 0;///结束
+
+
+            ULTRA1_DISTANCE = 0.0173f*ultra_real_time;
+//            LOG("Distance: %.3f cm\n",Distance);
+
+        }
+        else
+        {
+            ultra_begin_flag = 0;
+        }
+
+
+
+    }
+
+
 }
 
 
@@ -128,7 +170,7 @@ void MX_TIM2_Init(void)
 void HAL_TIM_IC_MspInit(TIM_HandleTypeDef* htim_ic)
 {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
-    if(htim_ic->Instance==TIM2)//PPM数据通信
+    if(htim_ic->Instance==TIM2)///PPM数据通信
     {
 
         /* Peripheral clock enable */
@@ -150,7 +192,9 @@ void HAL_TIM_IC_MspInit(TIM_HandleTypeDef* htim_ic)
         HAL_NVIC_EnableIRQ(TIM2_IRQn);
 
     }
-    else if(htim_ic->Instance==TIM12)
+
+
+    else if(htim_ic->Instance==TIM12)///超声波读取
     {
         /* USER CODE BEGIN TIM12_MspInit 0 */
 
@@ -171,6 +215,10 @@ void HAL_TIM_IC_MspInit(TIM_HandleTypeDef* htim_ic)
         HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
         /* USER CODE BEGIN TIM12_MspInit 1 */
+        /* TIM2 interrupt Init */
+
+        HAL_NVIC_SetPriority(TIM8_BRK_TIM12_IRQn, 1, 0);
+        HAL_NVIC_EnableIRQ(TIM8_BRK_TIM12_IRQn);
 
         /* USER CODE END TIM12_MspInit 1 */
     }
